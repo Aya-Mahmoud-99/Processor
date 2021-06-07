@@ -15,11 +15,26 @@ end entity;
 
 Architecture myModel of processor is
 
+component Execute is 
+
+port(
+Rst : IN std_logic;
+clk : IN std_logic;
+ReadData1 : in std_logic_vector(31 DOWNTO 0);
+ReadData2 : in std_logic_vector(31 DOWNTO 0);
+opcode : in std_logic_vector(5 DOWNTO 0);
+F: OUT std_logic_vector(31 DOWNTO 0)
+);
+
+end component;
+
 component Buffer_de is 
 	generic(n : integer := 4);
 port (
 ReadData1_in 	 :	in std_logic_vector(31 downto 0);
 ReadData2_in	 :	in std_logic_vector(31 downto 0);
+opcode_in : in std_logic_vector(5 DOWNTO 0);
+opcode_out : out std_logic_vector(5 DOWNTO 0);
 dst_in 	 :	in std_logic_vector(2 downto 0);
 src_in 	 :	in std_logic_vector(2 downto 0);
 offset_in 	 :	in std_logic_vector(15 downto 0);
@@ -72,6 +87,7 @@ clk : IN std_logic
 end COMPONENT;
 SIGNAL Iout_ftch : std_logic_vector(31 DOWNTO 0);
 SIGNAL Iin_decode : std_logic_vector(31 DOWNTO 0);
+SIGNAL Execute_output : std_logic_vector(31 DOWNTO 0);
 SIGNAL nxt_pc : std_logic_vector(15 DOWNTO 0);
 SIGNAL curr_pc : std_logic_vector(15 DOWNTO 0);
 signal ReadData1 : std_logic_vector(31 DOWNTO 0);
@@ -79,12 +95,12 @@ signal ReadData2 : std_logic_vector(31 DOWNTO 0);
 signal WriteData : std_logic_vector(31 DOWNTO 0); 
 signal WriteReg : std_logic_vector(2 downto 0);
 signal opcode : std_logic_vector(5 DOWNTO 0);
+signal opcode_out : std_logic_vector(5 DOWNTO 0);
 signal dst : std_logic_vector(2 DOWNTO 0);
 signal src : std_logic_vector(2 DOWNTO 0);
 signal offset : std_logic_vector(15 DOWNTO 0);
 signal ReadData1_out : std_logic_vector(31 DOWNTO 0);
 signal ReadData2_out : std_logic_vector(31 DOWNTO 0);
-signal opcode_out : std_logic_vector(5 DOWNTO 0);
 signal dst_out : std_logic_vector(2 DOWNTO 0);
 signal src_out : std_logic_vector(2 DOWNTO 0);
 signal offset_out : std_logic_vector(15 DOWNTO 0);
@@ -93,6 +109,7 @@ begin
 ftch: Fetch PORT MAP(Iout_ftch,Iin,nxt_pc,curr_pc,clk,rst,pc_enable);
 bf_ftch_decode: Buffer_fd PORT MAP(Iout_ftch,Iin_Decode,nxt_pc,curr_pc,clk);
 decode : deocde_writeBack PORT MAP(Rst,clk,'0',Iin_Decode,WriteData,ReadData1,ReadData2,WriteReg,opcode,dst,src,offset);
-df_dec : Buffer_de PORT MAP(ReadData1,ReadData2,dst,src,offset,ReadData1_out,ReadData2_out,dst_out,src_out,offset_out,clk);
+df_dec : Buffer_de PORT MAP(ReadData1,ReadData2,opcode,opcode_out,dst,src,offset,ReadData1_out,ReadData2_out,dst_out,src_out,offset_out,clk);
+ex : Execute PORT MAP(Rst,clk,ReadData1_out,ReadData2_out,opcode_out,Execute_output);
 
 end Architecture;

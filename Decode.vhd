@@ -46,5 +46,5 @@ destination<= instruction(23 downto 21);
 src<=instruction(18 downto 16);
 source<=instruction(18 downto 16);
 offset<=instruction(15 downto 0);
-rgFile: regist GENERIC MAP (32) PORT MAP(Rst,clk,WriteData,ReadData1,ReadData2,destination,source,WriteReg,enable_write);
+rgFile: regist GENERIC MAP (32) PORT MAP(Rst,clk,WriteData,ReadData1,ReadData2,source,destination,WriteReg,enable_write);
 end Architecture;

@@ -6,6 +6,8 @@ entity Buffer_de is
 port (
 ReadData1_in 	 :	in std_logic_vector(31 downto 0);
 ReadData2_in	 :	in std_logic_vector(31 downto 0);
+opcode_in : in std_logic_vector(5 DOWNTO 0);
+opcode_out : out std_logic_vector(5 DOWNTO 0);
 dst_in 	 :	in std_logic_vector(2 downto 0);
 src_in 	 :	in std_logic_vector(2 downto 0);
 offset_in 	 :	in std_logic_vector(15 downto 0);
@@ -27,6 +29,7 @@ BEGIN
 		dst_out<=dst_in;
 		src_out<=src_in;
 		offset_out<=offset_in;
+		opcode_out<=opcode_in;
 
 	END IF;
 END PROCESS;
