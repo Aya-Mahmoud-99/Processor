@@ -1,0 +1,709 @@
+# Compile of Fetch.vhd failed with 1 errors.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 4 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd failed with 1 errors.
+# 6 compiles, 3 failed with 6 errors.
+# Compile of Fetch.vhd failed with 1 errors.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 4 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd failed with 5 errors.
+# 6 compiles, 3 failed with 10 errors.
+# Compile of Fetch.vhd failed with 1 errors.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 4 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd failed with 2 errors.
+# 6 compiles, 3 failed with 7 errors.
+# Compile of Fetch.vhd failed with 1 errors.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 4 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd failed with 1 errors.
+# 6 compiles, 3 failed with 6 errors.
+# Compile of Fetch.vhd failed with 1 errors.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 4 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# 6 compiles, 2 failed with 5 errors.
+# Compile of Fetch.vhd failed with 1 errors.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 4 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# 6 compiles, 2 failed with 5 errors.
+# Compile of Fetch.vhd failed with 9 errors.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 4 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# 6 compiles, 2 failed with 13 errors.
+# Compile of Fetch.vhd failed with 11 errors.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 4 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# 6 compiles, 2 failed with 15 errors.
+# Compile of Fetch.vhd failed with 9 errors.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 4 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# 6 compiles, 2 failed with 13 errors.
+# Compile of Fetch.vhd failed with 1 errors.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 4 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# 6 compiles, 2 failed with 5 errors.
+# Compile of Fetch.vhd failed with 7 errors.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 4 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# 6 compiles, 2 failed with 11 errors.
+# Compile of Fetch.vhd failed with 6 errors.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 4 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# 6 compiles, 2 failed with 10 errors.
+# Compile of Fetch.vhd failed with 1 errors.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 4 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# 6 compiles, 2 failed with 5 errors.
+# Compile of Fetch.vhd failed with 5 errors.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 4 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# 6 compiles, 2 failed with 9 errors.
+# Compile of Fetch.vhd failed with 4 errors.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 4 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# 6 compiles, 2 failed with 8 errors.
+# Compile of Fetch.vhd failed with 6 errors.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 4 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# 6 compiles, 2 failed with 10 errors.
+# Compile of Fetch.vhd failed with 6 errors.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 4 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# 6 compiles, 2 failed with 10 errors.
+# Compile of Fetch.vhd failed with 5 errors.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 4 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# 6 compiles, 2 failed with 9 errors.
+# Compile of Fetch.vhd failed with 5 errors.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 4 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# 6 compiles, 2 failed with 9 errors.
+# Compile of Fetch.vhd failed with 5 errors.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 4 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# 6 compiles, 2 failed with 9 errors.
+# Compile of Fetch.vhd failed with 5 errors.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 4 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# 6 compiles, 2 failed with 9 errors.
+# Compile of Fetch.vhd failed with 4 errors.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 4 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# 6 compiles, 2 failed with 8 errors.
+# Compile of Fetch.vhd failed with 4 errors.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 4 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# 6 compiles, 2 failed with 8 errors.
+# Compile of Fetch.vhd failed with 3 errors.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 4 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# 6 compiles, 2 failed with 7 errors.
+# Compile of Fetch.vhd failed with 2 errors.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 4 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# 6 compiles, 2 failed with 6 errors.
+# Compile of Fetch.vhd failed with 1 errors.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 4 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# 6 compiles, 2 failed with 5 errors.
+# Compile of Fetch.vhd failed with 1 errors.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 4 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# 6 compiles, 2 failed with 5 errors.
+# Compile of Fetch.vhd failed with 1 errors.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 4 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# 6 compiles, 2 failed with 5 errors.
+# Compile of Fetch.vhd was successful.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 4 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# 6 compiles, 1 failed with 4 errors.
+# Compile of Fetch.vhd was successful.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 4 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# Compile of Fetch_Decode_Buffer.vhd failed with 1 errors.
+# 7 compiles, 2 failed with 5 errors.
+# Compile of Fetch.vhd was successful.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 4 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# Compile of Fetch_Decode_Buffer.vhd failed with 3 errors.
+# 7 compiles, 2 failed with 7 errors.
+# Compile of Fetch.vhd was successful.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 4 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# Compile of Fetch_Decode_Buffer.vhd was successful.
+# 7 compiles, 1 failed with 4 errors.
+# Compile of Fetch.vhd was successful.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 1 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# Compile of Fetch_Decode_Buffer.vhd was successful.
+# 7 compiles, 1 failed with 1 error.
+# Compile of Fetch.vhd was successful.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 4 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# Compile of Fetch_Decode_Buffer.vhd was successful.
+# 7 compiles, 1 failed with 4 errors.
+# Compile of Fetch.vhd was successful.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 10 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# Compile of Fetch_Decode_Buffer.vhd was successful.
+# 7 compiles, 1 failed with 10 errors.
+# Compile of Fetch.vhd was successful.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 8 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# Compile of Fetch_Decode_Buffer.vhd was successful.
+# 7 compiles, 1 failed with 8 errors.
+# Compile of Fetch.vhd was successful.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 7 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# Compile of Fetch_Decode_Buffer.vhd was successful.
+# 7 compiles, 1 failed with 7 errors.
+# Compile of Fetch.vhd was successful.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 6 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# Compile of Fetch_Decode_Buffer.vhd was successful.
+# 7 compiles, 1 failed with 6 errors.
+# Compile of Fetch.vhd was successful.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 5 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# Compile of Fetch_Decode_Buffer.vhd was successful.
+# 7 compiles, 1 failed with 5 errors.
+# Compile of Fetch.vhd was successful.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 3 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# Compile of Fetch_Decode_Buffer.vhd was successful.
+# 7 compiles, 1 failed with 3 errors.
+# Compile of Fetch.vhd was successful.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 3 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# Compile of Fetch_Decode_Buffer.vhd was successful.
+# 7 compiles, 1 failed with 3 errors.
+# Compile of Fetch.vhd was successful.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 1 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# Compile of Fetch_Decode_Buffer.vhd was successful.
+# 7 compiles, 1 failed with 1 error.
+# Compile of Fetch.vhd was successful.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 1 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# Compile of Fetch_Decode_Buffer.vhd was successful.
+# 7 compiles, 1 failed with 1 error.
+# Compile of Fetch.vhd was successful.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 4 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# Compile of Fetch_Decode_Buffer.vhd was successful.
+# 7 compiles, 1 failed with 4 errors.
+# Compile of Fetch.vhd was successful.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 3 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# Compile of Fetch_Decode_Buffer.vhd was successful.
+# 7 compiles, 1 failed with 3 errors.
+# Compile of Fetch.vhd was successful.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd failed with 2 errors.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# Compile of Fetch_Decode_Buffer.vhd was successful.
+# 7 compiles, 1 failed with 2 errors.
+# Compile of Fetch.vhd was successful.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd was successful.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# Compile of Fetch_Decode_Buffer.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.processor
+# vsim work.processor 
+# Start time: 22:27:54 on Jun 06,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.processor(mymodel)
+# Loading work.fetch(mymodel)
+# Loading work.my_ndff(b_my_ndff)
+# Loading work.my_dff(a_my_dff)
+# Loading work.ram(sync_ram_a)
+# Loading work.my_nadder(adder)
+# Loading work.buffer_fd(a_buffer)
+# ** Fatal: (vsim-3808) Incompatible modes for port "out1".
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/add File: D:/Aya/2021spring/Computer Arch/Projects/Project/Fetch.vhd Line: 49
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 22:27:56 on Jun 06,2021, Elapsed time: 0:00:02
+# Errors: 1, Warnings: 57
+# Compile of Fetch.vhd was successful.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd was successful.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# Compile of Fetch_Decode_Buffer.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.processor
+# vsim work.processor 
+# Start time: 22:29:02 on Jun 06,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.processor(mymodel)
+# Loading work.fetch(mymodel)
+# Loading work.my_ndff(b_my_ndff)
+# Loading work.my_dff(a_my_dff)
+# Loading work.ram(sync_ram_a)
+# Loading work.my_nadder(adder)
+# Loading work.buffer_fd(a_buffer)
+# WARNING: No extended dataflow license exists
+quit -sim
+# End time: 22:30:02 on Jun 06,2021, Elapsed time: 0:01:00
+# Errors: 0, Warnings: 2
+vsim work.processor
+# vsim work.processor 
+# Start time: 22:30:12 on Jun 06,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.processor(mymodel)
+# Loading work.fetch(mymodel)
+# Loading work.my_ndff(b_my_ndff)
+# Loading work.my_dff(a_my_dff)
+# Loading work.ram(sync_ram_a)
+# Loading work.my_nadder(adder)
+# Loading work.buffer_fd(a_buffer)
+add wave -position insertpoint  \
+sim:/processor/clk \
+sim:/processor/RST \
+sim:/processor/Iin \
+sim:/processor/pc_enable \
+sim:/processor/Iout_ftch \
+sim:/processor/Iin_decode \
+sim:/processor/nxt_pc \
+sim:/processor/curr_pc
+mem load -filltype value -filldata 000000 -fillradix symbolic /processor/ftch/IM/ram(0)
+mem load -filltype value -filldata 0000001 -fillradix symbolic /processor/ftch/IM/ram(1)
+mem load -filltype value -filldata 001001000 -fillradix symbolic /processor/ftch/IM/ram(2)
+mem load -filltype value -filldata {0000100001000010000 } -fillradix symbolic /processor/ftch/IM/ram(3)
+force -freeze sim:/processor/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/processor/RST 1 0
+force -freeze sim:/processor/pc_enable 1 0
+force -freeze sim:/processor/pc_enable 1 0
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/add
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/add
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+# ** Fatal: (vsim-3420) Array lengths do not match. Left is 32 (31 downto 0). Right is 64 (0 to 63).
+#    Time: 0 ps  Iteration: 0  Process: /processor/ftch/IM/line__31 File: D:/Aya/2021spring/Computer Arch/Projects/Project/Ram.vhd
+# Fatal error in Architecture sync_ram_a at D:/Aya/2021spring/Computer Arch/Projects/Project/Ram.vhd line 31
+# 
+# HDL call sequence:
+# Stopped at D:/Aya/2021spring/Computer Arch/Projects/Project/Ram.vhd 31 Architecture sync_ram_a
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at D:/Aya/2021spring/Computer Arch/Projects/Project/Ram.vhd 31 Architecture sync_ram_a
+# 
+quit -sim
+# End time: 22:36:18 on Jun 06,2021, Elapsed time: 0:06:06
+# Errors: 1, Warnings: 5
+# Compile of Fetch.vhd was successful.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd was successful.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# Compile of Fetch_Decode_Buffer.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.processor
+# vsim work.processor 
+# Start time: 22:36:35 on Jun 06,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.processor(mymodel)
+# Loading work.fetch(mymodel)
+# Loading work.my_ndff(b_my_ndff)
+# Loading work.my_dff(a_my_dff)
+# Loading work.ram(sync_ram_a)
+# Loading work.my_nadder(adder)
+# Loading work.buffer_fd(a_buffer)
+add wave -position insertpoint  \
+sim:/processor/clk \
+sim:/processor/RST \
+sim:/processor/Iin \
+sim:/processor/pc_enable \
+sim:/processor/Iout_ftch \
+sim:/processor/Iin_decode \
+sim:/processor/nxt_pc \
+sim:/processor/curr_pc
+force -freeze sim:/processor/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/processor/RST 1 0
+force -freeze sim:/processor/pc_enable 1 0
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/add
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/add
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+force -freeze sim:/processor/RST 0 0
+run
+run
+run
+run
+quit -sim
+# End time: 22:40:35 on Jun 06,2021, Elapsed time: 0:04:00
+# Errors: 0, Warnings: 6
+vsim work.processor
+# vsim work.processor 
+# Start time: 22:40:49 on Jun 06,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.processor(mymodel)
+# Loading work.fetch(mymodel)
+# Loading work.my_ndff(b_my_ndff)
+# Loading work.my_dff(a_my_dff)
+# Loading work.ram(sync_ram_a)
+# Loading work.my_nadder(adder)
+# Loading work.buffer_fd(a_buffer)
+# WARNING: No extended dataflow license exists
+mem load -filltype value -filldata {0000 } -fillradix symbolic /processor/ftch/IM/ram(0)
+mem load -filltype value -filldata 1 -fillradix symbolic /processor/ftch/IM/ram(1)
+mem load -filltype value -filldata 2 -fillradix symbolic /processor/ftch/IM/ram(1)
+# ** UI-Msg: (vsim-4026) Value "'2'" does not represent a literal of the enumeration type.
+# (vsim-3654) Value '2' is not legal for this signal.
+mem load -filltype value -filldata 000010000 -fillradix symbolic /processor/ftch/IM/ram(6)
+mem load -filltype value -filldata {UUUUUUUUUUUUUUUU 0101010} -fillradix symbolic /processor/ftch/IM/ram(3)
+mem load -filltype value -filldata {0010000100000 } -fillradix symbolic /processor/ftch/IM/ram(3)
+mem load -filltype value -filldata {100100100100 } -fillradix symbolic /processor/ftch/IM/ram(10)
+mem load -filltype value -filldata 100100100 -fillradix symbolic /processor/ftch/IM/ram(3)
+mem load -filltype value -filldata 1001001 -fillradix symbolic /processor/ftch/IM/ram(4)
+add wave -position insertpoint  \
+sim:/processor/clk \
+sim:/processor/RST \
+sim:/processor/Iin \
+sim:/processor/pc_enable \
+sim:/processor/Iout_ftch \
+sim:/processor/Iin_decode \
+sim:/processor/nxt_pc \
+sim:/processor/curr_pc
+force -freeze sim:/processor/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/processor/RST 0 0
+force -freeze sim:/processor/pc_enable 1 0
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/add
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/add
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /processor/ftch/add
+force -freeze sim:/processor/RST 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/processor/RST 1 0
+run
+run
+run
+force -freeze sim:/processor/RST 0 0
+run
+run
+run
+run
+run
+run
+mem load -filltype value -filldata 11111 -fillradix symbolic /processor/ftch/IM/ram(12)
+mem load -filltype value -filldata 11111 -fillradix symbolic /processor/ftch/IM/ram(8)
+mem load -filltype value -filldata 11111111111111111111 -fillradix symbolic /processor/ftch/IM/ram(5)
+# (vsim-3862) Too many digits in data '11111111111111111111'.
+mem load -filltype value -filldata 111111111111111111 -fillradix symbolic /processor/ftch/IM/ram(5)
+# (vsim-3862) Too many digits in data '111111111111111111'.
+mem load -filltype value -filldata 11111111111111111 -fillradix symbolic /processor/ftch/IM/ram(44)
+# (vsim-3862) Too many digits in data '11111111111111111'.
+mem load -filltype value -filldata {0000000000000000000 } -fillradix symbolic /processor/ftch/IM/ram(13)
+# (vsim-3862) Too many digits in data '0000000000000000000'.
+mem load -filltype value -filldata 11111111111111111 -fillradix symbolic /processor/ftch/IM/ram(7)
+# (vsim-3862) Too many digits in data '11111111111111111'.
+mem load -filltype value -filldata 1111 -fillradix symbolic /processor/ftch/IM/ram(7)
+mem load -filltype value -filldata {11111111111 } -fillradix symbolic /processor/ftch/IM/ram(2)
+mem load -filltype value -filldata {1111111111111111 } -fillradix symbolic /processor/ftch/IM/ram(9)
+mem load -filltype value -filldata 111 -fillradix symbolic /processor/ftch/IM/ram(9)
+mem load -filltype value -filldata {111111 } -fillradix symbolic /processor/ftch/IM/ram(13)
+mem load -filltype value -filldata 000 -fillradix symbolic /processor/ftch/IM/ram(14)
+mem load -filltype value -filldata 111111 -fillradix symbolic /processor/ftch/IM/ram(15)
+force -freeze sim:/processor/RST 1 0
+run
+force -freeze sim:/processor/RST 0 0
+run
+run
+run
+quit -sim
+# End time: 23:20:31 on Jun 06,2021, Elapsed time: 0:39:42
+# Errors: 0, Warnings: 6
+# Compile of RegisterFile.vhd failed with 45 errors.
+# Compile of RegisterFile.vhd failed with 28 errors.
+# Compile of TriStateBuffer.vhd was successful.
+# Compile of RegisterFile.vhd failed with 28 errors.
+# Compile of RegisterFile.vhd failed with 28 errors.
+# Compile of RegisterFile.vhd failed with 25 errors.
+# Compile of RegisterFile.vhd failed with 9 errors.
+# Compile of RegisterFile.vhd failed with 5 errors.
+# Compile of RegisterFile.vhd failed with 3 errors.
+# Compile of RegisterFile.vhd was successful.
+# Compile of Decoder.vhd was successful.
+# Compile of Decode.vhd failed with 1 errors.
+# Compile of Decode.vhd failed with 1 errors.
+# Compile of Decode.vhd failed with 10 errors.
+# Compile of Decode.vhd failed with 9 errors.
+# Compile of Decode.vhd failed with 1 errors.
+# Compile of Decode.vhd failed with 6 errors.
+# Compile of Decode.vhd failed with 5 errors.
+# Compile of Decode.vhd failed with 4 errors.
+# Compile of Decode.vhd failed with 2 errors.
+# Compile of Decode.vhd failed with 2 errors.
+# Compile of Decode.vhd failed with 7 errors.
+# Compile of Decode.vhd failed with 3 errors.
+# Compile of Decode.vhd was successful.
+# Compile of Decode.vhd failed with 1 errors.
+# Compile of Decode.vhd failed with 2 errors.
+# Compile of Decode.vhd failed with 4 errors.
+# Compile of Decode.vhd failed with 2 errors.
+# Compile of Decode.vhd was successful.
+# Compile of Processor.vhd failed with 9 errors.
+# Compile of Processor.vhd failed with 7 errors.
+# Compile of Processor.vhd failed with 5 errors.
+# Compile of Processor.vhd failed with 4 errors.
+# Compile of Processor.vhd failed with 1 errors.
+# Compile of Processor.vhd was successful.
+vsim work.processor
+# vsim work.processor 
+# Start time: 01:10:44 on Jun 07,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.processor(mymodel)
+# Loading work.fetch(mymodel)
+# Loading work.my_ndff(b_my_ndff)
+# Loading work.my_dff(a_my_dff)
+# Loading work.ram(sync_ram_a)
+# Loading work.my_nadder(adder)
+# Loading work.buffer_fd(a_buffer)
+# Loading work.deocde_writeback(mymodel)
+# Loading work.regist(regista)
+# Loading work.my_decoder(decodea)
+# Loading work.tristate(tri)
+add wave -position insertpoint  \
+sim:/processor/clk \
+sim:/processor/RST \
+sim:/processor/Iin \
+sim:/processor/pc_enable \
+sim:/processor/Iout_ftch \
+sim:/processor/Iin_decode \
+sim:/processor/nxt_pc \
+sim:/processor/curr_pc \
+sim:/processor/ReadData1 \
+sim:/processor/ReadData2 \
+sim:/processor/WriteData \
+sim:/processor/WriteReg \
+sim:/processor/opcode \
+sim:/processor/dst \
+sim:/processor/src \
+sim:/processor/offset
+mem load -filltype value -filldata 1111110001100100 -fillradix symbolic /processor/ftch/IM/ram(0)
+mem load -filltype value -filldata 000000000 -fillradix symbolic /processor/ftch/IM/ram(1)
+mem load -filltype value -filldata {1000010000100010 } -fillradix symbolic /processor/ftch/IM/ram(2)
+mem load -filltype value -filldata 0000 -fillradix symbolic /processor/ftch/IM/ram(3)
+force -freeze sim:/processor/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/processor/RST 1 0
+force -freeze sim:/processor/pc_enable 1 0
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/add
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/add
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+force -freeze sim:/processor/RST 0 0
+force -freeze sim:/processor/RST 0 0
+run
+run
+run
+quit -sim
+# End time: 01:25:11 on Jun 07,2021, Elapsed time: 0:14:27
+# Errors: 0, Warnings: 44
+# Compile of Buffer_Dec_Ex.vhd failed with 1 errors.
+# Compile of Buffer_Dec_Ex.vhd was successful.
+# Compile of Processor.vhd failed with 1 errors.
+# Compile of Processor.vhd failed with 6 errors.
+# Compile of Processor.vhd failed with 4 errors.
+# Compile of Processor.vhd failed with 1 errors.
+# Compile of Processor.vhd was successful.
