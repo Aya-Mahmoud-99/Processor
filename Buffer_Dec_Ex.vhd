@@ -4,6 +4,8 @@ USE ieee.numeric_std.all;
 entity Buffer_de is 
 	generic(n : integer := 4);
 port (
+write_enable_signal_in : IN std_logic;
+write_enable_signal_out : out std_logic;
 ReadData1_in 	 :	in std_logic_vector(31 downto 0);
 ReadData2_in	 :	in std_logic_vector(31 downto 0);
 opcode_in : in std_logic_vector(5 DOWNTO 0);
@@ -30,6 +32,7 @@ BEGIN
 		src_out<=src_in;
 		offset_out<=offset_in;
 		opcode_out<=opcode_in;
+		write_enable_signal_out<=write_enable_signal_in;
 
 	END IF;
 END PROCESS;

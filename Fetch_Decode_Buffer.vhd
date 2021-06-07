@@ -5,9 +5,9 @@ entity Buffer_fd is
 	generic(n : integer := 4);
 	port (Iin 	 :	in std_logic_vector(31 downto 0);
 Iout 	 :	out std_logic_vector(31 downto 0);
-Pcin 	 :	in std_logic_vector(15 downto 0);
+Pcin 	 :	in std_logic_vector(18 downto 0);
 clk : IN std_logic;
-Pcout 	 :	out std_logic_vector(15 downto 0)
+Pcout 	 :	out std_logic_vector(18 downto 0)
                   
 );
 end Buffer_fd;
