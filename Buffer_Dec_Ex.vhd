@@ -6,6 +6,10 @@ entity Buffer_de is
 port (
 write_enable_signal_in : IN std_logic;
 write_enable_signal_out : out std_logic;
+r_type_signal_in : IN std_logic;
+r_type_signal_out : OUT std_logic;
+dst_offset_signal_in : IN std_logic;
+dst_offset_signal_out : OUT std_logic;
 ReadData1_in 	 :	in std_logic_vector(31 downto 0);
 ReadData2_in	 :	in std_logic_vector(31 downto 0);
 opcode_in : in std_logic_vector(5 DOWNTO 0);
@@ -33,6 +37,8 @@ BEGIN
 		offset_out<=offset_in;
 		opcode_out<=opcode_in;
 		write_enable_signal_out<=write_enable_signal_in;
+		r_type_signal_out<=r_type_signal_in;
+		dst_offset_signal_out<=dst_offset_signal_in;
 
 	END IF;
 END PROCESS;

@@ -6,6 +6,8 @@ entity Buffer_mw is
 port (
 write_enable_signal_in : IN std_logic;
 write_enable_signal_out : out std_logic;
+r_type_signal_in : IN std_logic;
+r_type_signal_out : OUT std_logic;
 ALU_OUTPUT_IN	 :	in std_logic_vector(31 downto 0);
 ALU_OUTPUT_OUT	 :	out std_logic_vector(31 downto 0);
 MEM_OUTPUT_IN	 :	in std_logic_vector(31 downto 0);
@@ -24,6 +26,7 @@ BEGIN
    		ALU_output_out<=ALU_output_in;
 		MEM_OUTPUT_OUT<=MEM_OUTPUT_IN;
 		write_enable_signal_out<=write_enable_signal_in;
+		r_type_signal_out<=r_type_signal_in;
 	END IF;
 END PROCESS;
 END a_buffer;
