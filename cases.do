@@ -36,10 +36,14 @@ mem load -filltype value -filldata 0 -fillradix symbolic /processor/ftch/IM/ram(
 mem load -filltype value -filldata 0 -fillradix symbolic /processor/ftch/IM/ram(3)
 mem load -filltype value -filldata 0001000000100010 -fillradix symbolic /processor/ftch/IM/ram(4)
 mem load -filltype value -filldata 00 -fillradix symbolic /processor/ftch/IM/ram(5)
-mem load -filltype value -filldata 0001010001100100 -fillradix symbolic /processor/ftch/IM/ram(6)
+mem load -filltype value -filldata 0000110010100011 -fillradix symbolic /processor/ftch/IM/ram(6)
 mem load -filltype value -filldata 0 -fillradix symbolic /processor/ftch/IM/ram(7)
-mem load -filltype value -filldata 0001000000000001 -fillradix symbolic /processor/ftch/IM/ram(8)
-mem load -filltype value -filldata {0 } -fillradix symbolic /processor/ftch/IM/ram(9)
+mem load -filltype value -filldata 0001010001100100 -fillradix symbolic /processor/ftch/IM/ram(8)
+mem load -filltype value -filldata 0 -fillradix symbolic /processor/ftch/IM/ram(9)
+mem load -filltype value -filldata 0001000000000001 -fillradix symbolic /processor/ftch/IM/ram(10)
+mem load -filltype value -filldata {0 } -fillradix symbolic /processor/ftch/IM/ram(11)
+mem load -filltype value -filldata 0000100010100001 -fillradix symbolic /processor/ftch/IM/ram(12)
+mem load -filltype value -filldata {0 } -fillradix symbolic /processor/ftch/IM/ram(13)
 add wave -position insertpoint  \
 sim:/processor/MEM_OUTPUT_OUT
 add wave -position insertpoint  \
