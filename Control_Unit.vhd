@@ -9,7 +9,8 @@ opcode : in std_logic_vector(5 DOWNTO 0);
 write_enable: out std_logic;
 R_type_signal : out std_logic;
 dst_offset_signal : out std_logic;
-mem_write : out std_logic
+mem_write : out std_logic;
+src_dst_signal : out std_logic
 );
 
 end entity;
@@ -23,4 +24,6 @@ R_type_signal<=not opcode(5);
 dst_offset_signal<=opcode(4);
 mem_write<='1' when opcode="110000" or opcode="110001" or opcode="110101"
 ELSE '0';
+src_dst_signal<= not opcode(5) and opcode(4);
+
 end Architecture;

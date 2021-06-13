@@ -10,6 +10,7 @@ write_enable_signal : out std_logic;
 r_type_signal : out std_logic;
 dst_offset_signal : out std_logic;
 mem_write_signal : out std_logic;
+dst_src_signal : out std_logic;
 enable_Write : in std_logic;
 instruction : IN std_logic_vector(31 DOWNTO 0);
 WriteData : IN std_logic_vector(31 DOWNTO 0);
@@ -34,7 +35,8 @@ opcode : in std_logic_vector(5 DOWNTO 0);
 write_enable: out std_logic;
 R_type_signal : out std_logic;
 dst_offset_signal : out std_logic;
-mem_write : out std_logic
+mem_write : out std_logic;
+src_dst_signal : out std_logic
 );
 
 end component;
@@ -60,6 +62,7 @@ signal write_enable_signal_out : std_logic;
 signal r_type_signal_out : std_logic;
 signal dst_offset_signal_out : std_logic;
 signal mem_write_signal_out : std_logic;
+signal dst_src_signal_out : std_logic;
 
 begin
 opcode<=instruction(31 downto 26);
@@ -69,10 +72,11 @@ src<=instruction(18 downto 16);
 source<=instruction(18 downto 16);
 offset<=instruction(15 downto 0);
 rgFile: regist GENERIC MAP (32) PORT MAP(Rst,clk,WriteData,ReadData1,ReadData2,source,destination,WriteReg,enable_write);
-cu : control_unit PORT MAP (instruction(31 downto 26),write_enable_signal_out,r_type_signal_out,dst_offset_signal_out,mem_write_signal_out);
+cu : control_unit PORT MAP (instruction(31 downto 26),write_enable_signal_out,r_type_signal_out,dst_offset_signal_out,mem_write_signal_out,dst_src_signal_out);
 write_enable_signal<=write_enable_signal_out;
 r_type_signal<=r_type_signal_out;
 dst_offset_signal<=dst_offset_signal_out;
 mem_write_signal<=mem_write_signal_out;
+dst_src_signal<=dst_src_signal_out;
 
 end Architecture;

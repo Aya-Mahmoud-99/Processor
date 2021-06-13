@@ -46,6 +46,8 @@ mem load -filltype value -filldata 0000100010100001 -fillradix symbolic /process
 mem load -filltype value -filldata {0 } -fillradix symbolic /processor/ftch/IM/ram(13)
 mem load -filltype value -filldata 1101010000100111 -fillradix symbolic /processor/ftch/IM/ram(14)
 mem load -filltype value -filldata {10 } -fillradix symbolic /processor/ftch/IM/ram(15)
+mem load -filltype value -filldata 0101000000100000 -fillradix symbolic /processor/ftch/IM/ram(16)
+mem load -filltype value -filldata {100 } -fillradix symbolic /processor/ftch/IM/ram(17)
 add wave -position insertpoint  \
 sim:/processor/MEM_OUTPUT_OUT
 add wave -position insertpoint  \
@@ -86,7 +88,8 @@ sim:/processor/write_enable_signal \
 sim:/processor/write_enable_signal_exe \
 sim:/processor/write_enable_signal_in \
 sim:/processor/write_enable_signal_out \
-sim:/processor/write_enable_signal_mem
+sim:/processor/write_enable_signal_mem \
+sim:/processor/dst_or_src_out
 force -freeze sim:/processor/clk 1 0, 0 {50 ps} -r 100
 force -freeze sim:/processor/RST 1 0
 force -freeze sim:/processor/pc_enable 1 0

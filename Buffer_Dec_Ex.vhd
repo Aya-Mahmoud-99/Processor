@@ -12,6 +12,8 @@ dst_offset_signal_in : IN std_logic;
 dst_offset_signal_out : OUT std_logic;
 mem_write_signal : IN std_logic;
 mem_write_signal_out : OUT std_logic;
+dst_src_signal : IN std_logic;
+dst_src_signal_out : out std_logic;
 ReadData1_in 	 :	in std_logic_vector(31 downto 0);
 ReadData2_in	 :	in std_logic_vector(31 downto 0);
 opcode_in : in std_logic_vector(5 DOWNTO 0);
@@ -42,6 +44,7 @@ BEGIN
 		r_type_signal_out<=r_type_signal_in;
 		dst_offset_signal_out<=dst_offset_signal_in;
 		mem_write_signal_out<=mem_write_signal;
+		dst_src_signal_out<=dst_src_signal;
 
 	END IF;
 END PROCESS;
