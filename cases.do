@@ -44,6 +44,8 @@ mem load -filltype value -filldata 0001000000000001 -fillradix symbolic /process
 mem load -filltype value -filldata {0 } -fillradix symbolic /processor/ftch/IM/ram(11)
 mem load -filltype value -filldata 0000100010100001 -fillradix symbolic /processor/ftch/IM/ram(12)
 mem load -filltype value -filldata {0 } -fillradix symbolic /processor/ftch/IM/ram(13)
+mem load -filltype value -filldata 1101010000100111 -fillradix symbolic /processor/ftch/IM/ram(14)
+mem load -filltype value -filldata {10 } -fillradix symbolic /processor/ftch/IM/ram(15)
 add wave -position insertpoint  \
 sim:/processor/MEM_OUTPUT_OUT
 add wave -position insertpoint  \

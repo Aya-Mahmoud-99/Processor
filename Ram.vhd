@@ -25,7 +25,7 @@ BEGIN
  IF rising_edge(clk) THEN
  	IF we = '1' THEN
 	ram(to_integer(unsigned(address))) <= datain(31 downto 16);
-        ram(to_integer(unsigned(address))) <= datain(15 downto 0);
+        ram(to_integer(unsigned(address+1))) <= datain(15 downto 0);
  	END IF;
  END IF;
 END PROCESS;
