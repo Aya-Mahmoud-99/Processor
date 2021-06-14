@@ -11,7 +11,10 @@ PORT (clk : IN std_logic;
  we : IN std_logic;
 address : IN std_logic_vector(18 DOWNTO 0);
 datain : IN std_logic_vector(n-1 DOWNTO 0);
-dataout : OUT std_logic_vector(n-1 DOWNTO 0) );
+dataout : OUT std_logic_vector(n-1 DOWNTO 0);
+memory_zero : OUT std_logic_vector(18 DOWNTO 0);
+rst : IN std_logic
+ );
 END ENTITY ram;
 
 
@@ -29,5 +32,6 @@ BEGIN
  	END IF;
  END IF;
 END PROCESS;
- dataout <= ram(to_integer(unsigned(address)))&ram(to_integer(unsigned(address))+1);
+ dataout <= ram(to_integer(unsigned(address)))&ram(to_integer(unsigned(address))+1) WHEN rst='0' ;
+ memory_zero<=ram(0)(2 downto 0)&ram(1);
 END sync_ram_a;

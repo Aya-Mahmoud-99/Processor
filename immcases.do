@@ -26,6 +26,8 @@ vsim work.processor
 # Loading work.buffer_em(a_buffer)
 # Loading work.memory(mymodel)
 # Loading work.buffer_mw(a_buffer)
+mem load -filltype value -filldata 0 -fillradix symbolic /processor/Mem/IM/ram(0)
+mem load -filltype value -filldata 0 -fillradix symbolic /processor/Mem/IM/ram(1)
 mem load -filltype value -filldata 0101000000000001 -fillradix symbolic /processor/ftch/IM/ram(0)
 mem load -filltype value -filldata {10 } -fillradix symbolic /processor/ftch/IM/ram(1)
 mem load -filltype value -filldata 0000000000100000 -fillradix symbolic /processor/ftch/IM/ram(2)
