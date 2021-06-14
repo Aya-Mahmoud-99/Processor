@@ -468,3 +468,1047 @@ do cases.do
 quit -sim
 # End time: 19:03:27 on Jun 14,2021, Elapsed time: 0:11:16
 # Errors: 0, Warnings: 6
+# Compile of Forwarding_Unit.vhd failed with 1 errors.
+# Compile of Forwarding_Unit.vhd failed with 1 errors.
+# Compile of Forwarding_Unit.vhd was successful with warnings.
+# Compile of Forwarding_Unit.vhd was successful.
+# Compile of Execute.vhd failed with 7 errors.
+# Compile of Execute.vhd failed with 3 errors.
+# Compile of Execute.vhd failed with 1 errors.
+# Compile of Execute.vhd was successful.
+# Compile of Processor.vhd failed with 5 errors.
+# Compile of Processor.vhd failed with 1 errors.
+# Compile of Fetch.vhd was successful.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd was successful.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# Compile of Fetch_Decode_Buffer.vhd was successful.
+# Compile of Decode.vhd was successful.
+# Compile of RegisterFile.vhd was successful.
+# Compile of Decoder.vhd was successful.
+# Compile of TriStateBuffer.vhd was successful.
+# Compile of Buffer_Dec_Ex.vhd was successful.
+# Compile of Execute.vhd was successful.
+# Compile of Alu_PartA.vhd was successful.
+# Compile of Alu_PartB.vhd was successful.
+# Compile of Alu_PartC.vhd was successful.
+# Compile of Alu_PartD.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of oneBitAdder.vhd was successful.
+# Compile of EX_MEM_BUFFER.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of MEM_WRITEBACK_BUFFER.vhd was successful.
+# Compile of Control_Unit.vhd was successful.
+# Compile of Forwarding_Unit.vhd was successful.
+# 24 compiles, 0 failed with no errors.
+do cases.do
+# vsim work.processor 
+# Start time: 19:58:04 on Jun 14,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.processor(mymodel)
+# Loading work.fetch(mymodel)
+# Loading work.my_ndff(b_my_ndff)
+# Loading work.my_dff(a_my_dff)
+# Loading work.ram(sync_ram_a)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.buffer_fd(a_buffer)
+# Loading work.deocde_writeback(mymodel)
+# Loading work.regist(regista)
+# Loading work.my_decoder(decodea)
+# Loading work.tristate(tri)
+# Loading work.control_unit(mymodel)
+# Loading work.buffer_de(a_buffer)
+# Loading work.execute(mymodel)
+# Loading work.alu(struct1)
+# Loading work.buffer_em(a_buffer)
+# Loading work.memory(mymodel)
+# Loading work.buffer_mw(a_buffer)
+# Loading work.forwarding_unit(mymodel)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2147385344 is not in bounds of subtype NATURAL.
+#    Time: 1450 ps  Iteration: 1  Instance: /processor/ex/AL
+quit -sim
+# End time: 20:30:54 on Jun 14,2021, Elapsed time: 0:32:50
+# Errors: 0, Warnings: 20
+# Compile of Forwarding_Unit.vhd was successful.
+# Compile of Fetch.vhd was successful.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd was successful.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# Compile of Fetch_Decode_Buffer.vhd was successful.
+# Compile of Decode.vhd was successful.
+# Compile of RegisterFile.vhd was successful.
+# Compile of Decoder.vhd was successful.
+# Compile of TriStateBuffer.vhd was successful.
+# Compile of Buffer_Dec_Ex.vhd was successful.
+# Compile of Execute.vhd was successful.
+# Compile of Alu_PartA.vhd was successful.
+# Compile of Alu_PartB.vhd was successful.
+# Compile of Alu_PartC.vhd was successful.
+# Compile of Alu_PartD.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of oneBitAdder.vhd was successful.
+# Compile of EX_MEM_BUFFER.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of MEM_WRITEBACK_BUFFER.vhd was successful.
+# Compile of Control_Unit.vhd was successful.
+# Compile of Forwarding_Unit.vhd was successful.
+# 24 compiles, 0 failed with no errors.
+do cases.do
+# vsim work.processor 
+# Start time: 20:38:49 on Jun 14,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.processor(mymodel)
+# Loading work.fetch(mymodel)
+# Loading work.my_ndff(b_my_ndff)
+# Loading work.my_dff(a_my_dff)
+# Loading work.ram(sync_ram_a)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.buffer_fd(a_buffer)
+# Loading work.deocde_writeback(mymodel)
+# Loading work.regist(regista)
+# Loading work.my_decoder(decodea)
+# Loading work.tristate(tri)
+# Loading work.control_unit(mymodel)
+# Loading work.buffer_de(a_buffer)
+# Loading work.execute(mymodel)
+# Loading work.alu(struct1)
+# Loading work.buffer_em(a_buffer)
+# Loading work.memory(mymodel)
+# Loading work.buffer_mw(a_buffer)
+# Loading work.forwarding_unit(mymodel)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2147385344 is not in bounds of subtype NATURAL.
+#    Time: 1450 ps  Iteration: 1  Instance: /processor/ex/AL
+quit -sim
+# End time: 20:41:39 on Jun 14,2021, Elapsed time: 0:02:50
+# Errors: 0, Warnings: 8
+# Compile of Execute.vhd was successful.
+# Compile of Fetch.vhd was successful.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd was successful.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# Compile of Fetch_Decode_Buffer.vhd was successful.
+# Compile of Decode.vhd was successful.
+# Compile of RegisterFile.vhd was successful.
+# Compile of Decoder.vhd was successful.
+# Compile of TriStateBuffer.vhd was successful.
+# Compile of Buffer_Dec_Ex.vhd was successful.
+# Compile of Execute.vhd was successful.
+# Compile of Alu_PartA.vhd was successful.
+# Compile of Alu_PartB.vhd was successful.
+# Compile of Alu_PartC.vhd was successful.
+# Compile of Alu_PartD.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of oneBitAdder.vhd was successful.
+# Compile of EX_MEM_BUFFER.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of MEM_WRITEBACK_BUFFER.vhd was successful.
+# Compile of Control_Unit.vhd was successful.
+# Compile of Forwarding_Unit.vhd was successful.
+# 24 compiles, 0 failed with no errors.
+do cases.do
+# vsim work.processor 
+# Start time: 20:51:51 on Jun 14,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.processor(mymodel)
+# Loading work.fetch(mymodel)
+# Loading work.my_ndff(b_my_ndff)
+# Loading work.my_dff(a_my_dff)
+# Loading work.ram(sync_ram_a)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.buffer_fd(a_buffer)
+# Loading work.deocde_writeback(mymodel)
+# Loading work.regist(regista)
+# Loading work.my_decoder(decodea)
+# Loading work.tristate(tri)
+# Loading work.control_unit(mymodel)
+# Loading work.buffer_de(a_buffer)
+# Loading work.execute(mymodel)
+# Loading work.alu(struct1)
+# Loading work.buffer_em(a_buffer)
+# Loading work.memory(mymodel)
+# Loading work.buffer_mw(a_buffer)
+# Loading work.forwarding_unit(mymodel)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2147385344 is not in bounds of subtype NATURAL.
+#    Time: 1450 ps  Iteration: 1  Instance: /processor/ex/AL
+# Compile of Fetch.vhd was successful.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd was successful.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# Compile of Fetch_Decode_Buffer.vhd was successful.
+# Compile of Decode.vhd was successful.
+# Compile of RegisterFile.vhd was successful.
+# Compile of Decoder.vhd was successful.
+# Compile of TriStateBuffer.vhd was successful.
+# Compile of Buffer_Dec_Ex.vhd was successful.
+# Compile of Execute.vhd was successful.
+# Compile of Alu_PartA.vhd was successful.
+# Compile of Alu_PartB.vhd was successful.
+# Compile of Alu_PartC.vhd was successful.
+# Compile of Alu_PartD.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of oneBitAdder.vhd was successful.
+# Compile of EX_MEM_BUFFER.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of MEM_WRITEBACK_BUFFER.vhd was successful.
+# Compile of Control_Unit.vhd was successful.
+# Compile of Forwarding_Unit.vhd was successful.
+# 24 compiles, 0 failed with no errors.
+quit -sim
+# End time: 21:15:16 on Jun 14,2021, Elapsed time: 0:23:25
+# Errors: 0, Warnings: 9
+do cases.do
+# vsim work.processor 
+# Start time: 21:15:21 on Jun 14,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.processor(mymodel)
+# Loading work.fetch(mymodel)
+# Loading work.my_ndff(b_my_ndff)
+# Loading work.my_dff(a_my_dff)
+# Loading work.ram(sync_ram_a)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.buffer_fd(a_buffer)
+# Loading work.deocde_writeback(mymodel)
+# Loading work.regist(regista)
+# Loading work.my_decoder(decodea)
+# Loading work.tristate(tri)
+# Loading work.control_unit(mymodel)
+# Loading work.buffer_de(a_buffer)
+# Loading work.execute(mymodel)
+# Loading work.alu(struct1)
+# Loading work.buffer_em(a_buffer)
+# Loading work.memory(mymodel)
+# Loading work.buffer_mw(a_buffer)
+# Loading work.forwarding_unit(mymodel)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+do cases.do
+# End time: 21:17:23 on Jun 14,2021, Elapsed time: 0:02:02
+# Errors: 0, Warnings: 5
+# vsim work.processor 
+# Start time: 21:17:23 on Jun 14,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.processor(mymodel)
+# Loading work.fetch(mymodel)
+# Loading work.my_ndff(b_my_ndff)
+# Loading work.my_dff(a_my_dff)
+# Loading work.ram(sync_ram_a)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.buffer_fd(a_buffer)
+# Loading work.deocde_writeback(mymodel)
+# Loading work.regist(regista)
+# Loading work.my_decoder(decodea)
+# Loading work.tristate(tri)
+# Loading work.control_unit(mymodel)
+# Loading work.buffer_de(a_buffer)
+# Loading work.execute(mymodel)
+# Loading work.alu(struct1)
+# Loading work.buffer_em(a_buffer)
+# Loading work.memory(mymodel)
+# Loading work.buffer_mw(a_buffer)
+# Loading work.forwarding_unit(mymodel)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+add wave -position insertpoint  \
+sim:/processor/decision_src
+add wave -position insertpoint  \
+sim:/processor/decision_dst
+do cases.do
+# End time: 21:19:57 on Jun 14,2021, Elapsed time: 0:02:34
+# Errors: 0, Warnings: 5
+# vsim work.processor 
+# Start time: 21:19:57 on Jun 14,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.processor(mymodel)
+# Loading work.fetch(mymodel)
+# Loading work.my_ndff(b_my_ndff)
+# Loading work.my_dff(a_my_dff)
+# Loading work.ram(sync_ram_a)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.buffer_fd(a_buffer)
+# Loading work.deocde_writeback(mymodel)
+# Loading work.regist(regista)
+# Loading work.my_decoder(decodea)
+# Loading work.tristate(tri)
+# Loading work.control_unit(mymodel)
+# Loading work.buffer_de(a_buffer)
+# Loading work.execute(mymodel)
+# Loading work.alu(struct1)
+# Loading work.buffer_em(a_buffer)
+# Loading work.memory(mymodel)
+# Loading work.buffer_mw(a_buffer)
+# Loading work.forwarding_unit(mymodel)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+# Compile of Fetch.vhd was successful.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd was successful.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# Compile of Fetch_Decode_Buffer.vhd was successful.
+# Compile of Decode.vhd was successful.
+# Compile of RegisterFile.vhd was successful.
+# Compile of Decoder.vhd was successful.
+# Compile of TriStateBuffer.vhd was successful.
+# Compile of Buffer_Dec_Ex.vhd was successful.
+# Compile of Execute.vhd was successful.
+# Compile of Alu_PartA.vhd was successful.
+# Compile of Alu_PartB.vhd was successful.
+# Compile of Alu_PartC.vhd was successful.
+# Compile of Alu_PartD.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of oneBitAdder.vhd was successful.
+# Compile of EX_MEM_BUFFER.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of MEM_WRITEBACK_BUFFER.vhd was successful.
+# Compile of Control_Unit.vhd was successful.
+# Compile of Forwarding_Unit.vhd was successful.
+# 24 compiles, 0 failed with no errors.
+quit -sim
+# End time: 21:23:56 on Jun 14,2021, Elapsed time: 0:03:59
+# Errors: 0, Warnings: 6
+do cases.do
+# vsim work.processor 
+# Start time: 21:24:00 on Jun 14,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.processor(mymodel)
+# Loading work.fetch(mymodel)
+# Loading work.my_ndff(b_my_ndff)
+# Loading work.my_dff(a_my_dff)
+# Loading work.ram(sync_ram_a)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.buffer_fd(a_buffer)
+# Loading work.deocde_writeback(mymodel)
+# Loading work.regist(regista)
+# Loading work.my_decoder(decodea)
+# Loading work.tristate(tri)
+# Loading work.control_unit(mymodel)
+# Loading work.buffer_de(a_buffer)
+# Loading work.execute(mymodel)
+# Loading work.alu(struct1)
+# Loading work.buffer_em(a_buffer)
+# Loading work.memory(mymodel)
+# Loading work.buffer_mw(a_buffer)
+# Loading work.forwarding_unit(mymodel)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+quit -sim
+# End time: 21:33:24 on Jun 14,2021, Elapsed time: 0:09:24
+# Errors: 0, Warnings: 5
+do cases.do
+# vsim work.processor 
+# Start time: 21:33:29 on Jun 14,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.processor(mymodel)
+# Loading work.fetch(mymodel)
+# Loading work.my_ndff(b_my_ndff)
+# Loading work.my_dff(a_my_dff)
+# Loading work.ram(sync_ram_a)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.buffer_fd(a_buffer)
+# Loading work.deocde_writeback(mymodel)
+# Loading work.regist(regista)
+# Loading work.my_decoder(decodea)
+# Loading work.tristate(tri)
+# Loading work.control_unit(mymodel)
+# Loading work.buffer_de(a_buffer)
+# Loading work.execute(mymodel)
+# Loading work.alu(struct1)
+# Loading work.buffer_em(a_buffer)
+# Loading work.memory(mymodel)
+# Loading work.buffer_mw(a_buffer)
+# Loading work.forwarding_unit(mymodel)
+# WARNING: No extended dataflow license exists
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2147385344 is not in bounds of subtype NATURAL.
+#    Time: 1650 ps  Iteration: 1  Instance: /processor/ex/AL
+do cases.do
+# End time: 21:36:29 on Jun 14,2021, Elapsed time: 0:03:00
+# Errors: 0, Warnings: 6
+# vsim work.processor 
+# Start time: 21:36:29 on Jun 14,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.processor(mymodel)
+# Loading work.fetch(mymodel)
+# Loading work.my_ndff(b_my_ndff)
+# Loading work.my_dff(a_my_dff)
+# Loading work.ram(sync_ram_a)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.buffer_fd(a_buffer)
+# Loading work.deocde_writeback(mymodel)
+# Loading work.regist(regista)
+# Loading work.my_decoder(decodea)
+# Loading work.tristate(tri)
+# Loading work.control_unit(mymodel)
+# Loading work.buffer_de(a_buffer)
+# Loading work.execute(mymodel)
+# Loading work.alu(struct1)
+# Loading work.buffer_em(a_buffer)
+# Loading work.memory(mymodel)
+# Loading work.buffer_mw(a_buffer)
+# Loading work.forwarding_unit(mymodel)
+# WARNING: No extended dataflow license exists
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+quit -sim
+# End time: 21:49:18 on Jun 14,2021, Elapsed time: 0:12:49
+# Errors: 0, Warnings: 8
+do cases.do
+# vsim work.processor 
+# Start time: 21:49:23 on Jun 14,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.processor(mymodel)
+# Loading work.fetch(mymodel)
+# Loading work.my_ndff(b_my_ndff)
+# Loading work.my_dff(a_my_dff)
+# Loading work.ram(sync_ram_a)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.buffer_fd(a_buffer)
+# Loading work.deocde_writeback(mymodel)
+# Loading work.regist(regista)
+# Loading work.my_decoder(decodea)
+# Loading work.tristate(tri)
+# Loading work.control_unit(mymodel)
+# Loading work.buffer_de(a_buffer)
+# Loading work.execute(mymodel)
+# Loading work.alu(struct1)
+# Loading work.buffer_em(a_buffer)
+# Loading work.memory(mymodel)
+# Loading work.buffer_mw(a_buffer)
+# Loading work.forwarding_unit(mymodel)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+quit -sim
+# End time: 21:49:49 on Jun 14,2021, Elapsed time: 0:00:26
+# Errors: 0, Warnings: 5
+do add_immediate_cases
+# vsim work.processor 
+# Start time: 21:50:20 on Jun 14,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.processor(mymodel)
+# Loading work.fetch(mymodel)
+# Loading work.my_ndff(b_my_ndff)
+# Loading work.my_dff(a_my_dff)
+# Loading work.ram(sync_ram_a)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.buffer_fd(a_buffer)
+# Loading work.deocde_writeback(mymodel)
+# Loading work.regist(regista)
+# Loading work.my_decoder(decodea)
+# Loading work.tristate(tri)
+# Loading work.control_unit(mymodel)
+# Loading work.buffer_de(a_buffer)
+# Loading work.execute(mymodel)
+# Loading work.alu(struct1)
+# Loading work.buffer_em(a_buffer)
+# Loading work.memory(mymodel)
+# Loading work.buffer_mw(a_buffer)
+# Loading work.forwarding_unit(mymodel)
+# WARNING: No extended dataflow license exists
+# ** Error: unknown subcommand "mem" : must be compare, display, list, load, save or search
+# Error in macro ./add_immediate_cases line 29
+# unknown subcommand "mem" : must be compare, display, list, load, save or search
+#     while executing
+# "::mem::_unknown_ ::mem mem load -filltype value -filldata 0101000000000001 -fillradix symbolic /processor/ftch/IM/ram(0)"
+#     (ensemble unknown subcommand handler)
+#     invoked from within
+# "mem mem load -filltype value -filldata 0101000000000001 -fillradix symbolic /processor/ftch/IM/ram(0)"
+do immcases.do
+# End time: 21:52:19 on Jun 14,2021, Elapsed time: 0:01:59
+# Errors: 1, Warnings: 3
+# vsim work.processor 
+# Start time: 21:52:19 on Jun 14,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.processor(mymodel)
+# Loading work.fetch(mymodel)
+# Loading work.my_ndff(b_my_ndff)
+# Loading work.my_dff(a_my_dff)
+# Loading work.ram(sync_ram_a)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.buffer_fd(a_buffer)
+# Loading work.deocde_writeback(mymodel)
+# Loading work.regist(regista)
+# Loading work.my_decoder(decodea)
+# Loading work.tristate(tri)
+# Loading work.control_unit(mymodel)
+# Loading work.buffer_de(a_buffer)
+# Loading work.execute(mymodel)
+# Loading work.alu(struct1)
+# Loading work.buffer_em(a_buffer)
+# Loading work.memory(mymodel)
+# Loading work.buffer_mw(a_buffer)
+# Loading work.forwarding_unit(mymodel)
+# WARNING: No extended dataflow license exists
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+quit -sim
+# End time: 21:56:00 on Jun 14,2021, Elapsed time: 0:03:41
+# Errors: 0, Warnings: 5
+do immcases.do
+# vsim work.processor 
+# Start time: 21:56:08 on Jun 14,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.processor(mymodel)
+# Loading work.fetch(mymodel)
+# Loading work.my_ndff(b_my_ndff)
+# Loading work.my_dff(a_my_dff)
+# Loading work.ram(sync_ram_a)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.buffer_fd(a_buffer)
+# Loading work.deocde_writeback(mymodel)
+# Loading work.regist(regista)
+# Loading work.my_decoder(decodea)
+# Loading work.tristate(tri)
+# Loading work.control_unit(mymodel)
+# Loading work.buffer_de(a_buffer)
+# Loading work.execute(mymodel)
+# Loading work.alu(struct1)
+# Loading work.buffer_em(a_buffer)
+# Loading work.memory(mymodel)
+# Loading work.buffer_mw(a_buffer)
+# Loading work.forwarding_unit(mymodel)
+# WARNING: No extended dataflow license exists
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+quit -sim
+# End time: 21:57:12 on Jun 14,2021, Elapsed time: 0:01:04
+# Errors: 0, Warnings: 5
+quit -sim
+do immcases.do
+# vsim work.processor 
+# Start time: 21:59:19 on Jun 14,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.processor(mymodel)
+# Loading work.fetch(mymodel)
+# Loading work.my_ndff(b_my_ndff)
+# Loading work.my_dff(a_my_dff)
+# Loading work.ram(sync_ram_a)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.buffer_fd(a_buffer)
+# Loading work.deocde_writeback(mymodel)
+# Loading work.regist(regista)
+# Loading work.my_decoder(decodea)
+# Loading work.tristate(tri)
+# Loading work.control_unit(mymodel)
+# Loading work.buffer_de(a_buffer)
+# Loading work.execute(mymodel)
+# Loading work.alu(struct1)
+# Loading work.buffer_em(a_buffer)
+# Loading work.memory(mymodel)
+# Loading work.buffer_mw(a_buffer)
+# Loading work.forwarding_unit(mymodel)
+# WARNING: No extended dataflow license exists
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+quit -sim
+# End time: 22:00:02 on Jun 14,2021, Elapsed time: 0:00:43
+# Errors: 0, Warnings: 6
+do immcases.do
+# vsim work.processor 
+# Start time: 22:00:04 on Jun 14,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.processor(mymodel)
+# Loading work.fetch(mymodel)
+# Loading work.my_ndff(b_my_ndff)
+# Loading work.my_dff(a_my_dff)
+# Loading work.ram(sync_ram_a)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.buffer_fd(a_buffer)
+# Loading work.deocde_writeback(mymodel)
+# Loading work.regist(regista)
+# Loading work.my_decoder(decodea)
+# Loading work.tristate(tri)
+# Loading work.control_unit(mymodel)
+# Loading work.buffer_de(a_buffer)
+# Loading work.execute(mymodel)
+# Loading work.alu(struct1)
+# Loading work.buffer_em(a_buffer)
+# Loading work.memory(mymodel)
+# Loading work.buffer_mw(a_buffer)
+# Loading work.forwarding_unit(mymodel)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+do immcases.do
+# End time: 22:03:39 on Jun 14,2021, Elapsed time: 0:03:35
+# Errors: 0, Warnings: 5
+# vsim work.processor 
+# Start time: 22:03:39 on Jun 14,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.processor(mymodel)
+# Loading work.fetch(mymodel)
+# Loading work.my_ndff(b_my_ndff)
+# Loading work.my_dff(a_my_dff)
+# Loading work.ram(sync_ram_a)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.buffer_fd(a_buffer)
+# Loading work.deocde_writeback(mymodel)
+# Loading work.regist(regista)
+# Loading work.my_decoder(decodea)
+# Loading work.tristate(tri)
+# Loading work.control_unit(mymodel)
+# Loading work.buffer_de(a_buffer)
+# Loading work.execute(mymodel)
+# Loading work.alu(struct1)
+# Loading work.buffer_em(a_buffer)
+# Loading work.memory(mymodel)
+# Loading work.buffer_mw(a_buffer)
+# Loading work.forwarding_unit(mymodel)
+# WARNING: No extended dataflow license exists
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+quit -sim
+# End time: 22:06:59 on Jun 14,2021, Elapsed time: 0:03:20
+# Errors: 0, Warnings: 5
+do cases.do
+# vsim work.processor 
+# Start time: 22:07:12 on Jun 14,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.processor(mymodel)
+# Loading work.fetch(mymodel)
+# Loading work.my_ndff(b_my_ndff)
+# Loading work.my_dff(a_my_dff)
+# Loading work.ram(sync_ram_a)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.buffer_fd(a_buffer)
+# Loading work.deocde_writeback(mymodel)
+# Loading work.regist(regista)
+# Loading work.my_decoder(decodea)
+# Loading work.tristate(tri)
+# Loading work.control_unit(mymodel)
+# Loading work.buffer_de(a_buffer)
+# Loading work.execute(mymodel)
+# Loading work.alu(struct1)
+# Loading work.buffer_em(a_buffer)
+# Loading work.memory(mymodel)
+# Loading work.buffer_mw(a_buffer)
+# Loading work.forwarding_unit(mymodel)
+# WARNING: No extended dataflow license exists
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+quit -sim
+# End time: 22:07:38 on Jun 14,2021, Elapsed time: 0:00:26
+# Errors: 0, Warnings: 5
+do immcases.do
+# vsim work.processor 
+# Start time: 22:07:41 on Jun 14,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.processor(mymodel)
+# Loading work.fetch(mymodel)
+# Loading work.my_ndff(b_my_ndff)
+# Loading work.my_dff(a_my_dff)
+# Loading work.ram(sync_ram_a)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.buffer_fd(a_buffer)
+# Loading work.deocde_writeback(mymodel)
+# Loading work.regist(regista)
+# Loading work.my_decoder(decodea)
+# Loading work.tristate(tri)
+# Loading work.control_unit(mymodel)
+# Loading work.buffer_de(a_buffer)
+# Loading work.execute(mymodel)
+# Loading work.alu(struct1)
+# Loading work.buffer_em(a_buffer)
+# Loading work.memory(mymodel)
+# Loading work.buffer_mw(a_buffer)
+# Loading work.forwarding_unit(mymodel)
+# WARNING: No extended dataflow license exists
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+# Compile of Fetch.vhd was successful.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd was successful.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# Compile of Fetch_Decode_Buffer.vhd was successful.
+# Compile of Decode.vhd was successful.
+# Compile of RegisterFile.vhd was successful.
+# Compile of Decoder.vhd was successful.
+# Compile of TriStateBuffer.vhd was successful.
+# Compile of Buffer_Dec_Ex.vhd was successful.
+# Compile of Execute.vhd was successful.
+# Compile of Alu_PartA.vhd was successful.
+# Compile of Alu_PartB.vhd was successful.
+# Compile of Alu_PartC.vhd was successful.
+# Compile of Alu_PartD.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of oneBitAdder.vhd was successful.
+# Compile of EX_MEM_BUFFER.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of MEM_WRITEBACK_BUFFER.vhd was successful.
+# Compile of Control_Unit.vhd was successful.
+# Compile of Forwarding_Unit.vhd was successful.
+# 24 compiles, 0 failed with no errors.
+do immcases.do
+# End time: 22:10:31 on Jun 14,2021, Elapsed time: 0:02:50
+# Errors: 0, Warnings: 6
+# vsim work.processor 
+# Start time: 22:10:31 on Jun 14,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.processor(mymodel)
+# Loading work.fetch(mymodel)
+# Loading work.my_ndff(b_my_ndff)
+# Loading work.my_dff(a_my_dff)
+# Loading work.ram(sync_ram_a)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.buffer_fd(a_buffer)
+# Loading work.deocde_writeback(mymodel)
+# Loading work.regist(regista)
+# Loading work.my_decoder(decodea)
+# Loading work.tristate(tri)
+# Loading work.control_unit(mymodel)
+# Loading work.buffer_de(a_buffer)
+# Loading work.execute(mymodel)
+# Loading work.alu(struct1)
+# Loading work.buffer_em(a_buffer)
+# Loading work.memory(mymodel)
+# Loading work.buffer_mw(a_buffer)
+# Loading work.forwarding_unit(mymodel)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+do cases.do
+# End time: 22:15:17 on Jun 14,2021, Elapsed time: 0:04:46
+# Errors: 0, Warnings: 5
+# vsim work.processor 
+# Start time: 22:15:17 on Jun 14,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.processor(mymodel)
+# Loading work.fetch(mymodel)
+# Loading work.my_ndff(b_my_ndff)
+# Loading work.my_dff(a_my_dff)
+# Loading work.ram(sync_ram_a)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.buffer_fd(a_buffer)
+# Loading work.deocde_writeback(mymodel)
+# Loading work.regist(regista)
+# Loading work.my_decoder(decodea)
+# Loading work.tristate(tri)
+# Loading work.control_unit(mymodel)
+# Loading work.buffer_de(a_buffer)
+# Loading work.execute(mymodel)
+# Loading work.alu(struct1)
+# Loading work.buffer_em(a_buffer)
+# Loading work.memory(mymodel)
+# Loading work.buffer_mw(a_buffer)
+# Loading work.forwarding_unit(mymodel)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+# Compile of Control_Unit.vhd failed with 1 errors.
+# Compile of Control_Unit.vhd failed with 3 errors.
+# Compile of Control_Unit.vhd was successful.
+# Compile of Control_Unit.vhd was successful.
+# Compile of Decode.vhd was successful.
+# Compile of Fetch.vhd was successful.
+# Compile of Ram.vhd was successful.
+# Compile of Processor.vhd was successful.
+# Compile of DFlipFlop.vhd was successful.
+# Compile of NDFlipFlop.vhd was successful.
+# Compile of NbitAdder.vhd was successful.
+# Compile of Fetch_Decode_Buffer.vhd was successful.
+# Compile of Decode.vhd was successful.
+# Compile of RegisterFile.vhd was successful.
+# Compile of Decoder.vhd was successful.
+# Compile of TriStateBuffer.vhd was successful.
+# Compile of Buffer_Dec_Ex.vhd was successful.
+# Compile of Execute.vhd was successful.
+# Compile of Alu_PartA.vhd was successful.
+# Compile of Alu_PartB.vhd was successful.
+# Compile of Alu_PartC.vhd was successful.
+# Compile of Alu_PartD.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of oneBitAdder.vhd was successful.
+# Compile of EX_MEM_BUFFER.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of MEM_WRITEBACK_BUFFER.vhd was successful.
+# Compile of Control_Unit.vhd was successful.
+# Compile of Forwarding_Unit.vhd was successful.
+# 24 compiles, 0 failed with no errors.
+do cases.do
+# End time: 22:48:00 on Jun 14,2021, Elapsed time: 0:32:43
+# Errors: 0, Warnings: 11
+# vsim work.processor 
+# Start time: 22:48:00 on Jun 14,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.processor(mymodel)
+# Loading work.fetch(mymodel)
+# Loading work.my_ndff(b_my_ndff)
+# Loading work.my_dff(a_my_dff)
+# Loading work.ram(sync_ram_a)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.buffer_fd(a_buffer)
+# Loading work.deocde_writeback(mymodel)
+# Loading work.regist(regista)
+# Loading work.my_decoder(decodea)
+# Loading work.tristate(tri)
+# Loading work.control_unit(mymodel)
+# Loading work.buffer_de(a_buffer)
+# Loading work.execute(mymodel)
+# Loading work.alu(struct1)
+# Loading work.buffer_em(a_buffer)
+# Loading work.memory(mymodel)
+# Loading work.buffer_mw(a_buffer)
+# Loading work.forwarding_unit(mymodel)
+# WARNING: No extended dataflow license exists
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/Mem/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM

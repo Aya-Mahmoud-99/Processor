@@ -52,12 +52,18 @@ mem load -filltype value -filldata 0101000000100000 -fillradix symbolic /process
 mem load -filltype value -filldata {10 } -fillradix symbolic /processor/ftch/IM/ram(19)
 mem load -filltype value -filldata 0001100010100100 -fillradix symbolic /processor/ftch/IM/ram(20)
 mem load -filltype value -filldata {10 } -fillradix symbolic /processor/ftch/IM/ram(21)
-mem load -filltype value -filldata 0001110001100011 -fillradix symbolic /processor/ftch/IM/ram(22)
+mem load -filltype value -filldata 0001110000100011 -fillradix symbolic /processor/ftch/IM/ram(22)
 mem load -filltype value -filldata {100 } -fillradix symbolic /processor/ftch/IM/ram(23)
 mem load -filltype value -filldata 0110000010100000 -fillradix symbolic /processor/ftch/IM/ram(24)
 mem load -filltype value -filldata {10 } -fillradix symbolic /processor/ftch/IM/ram(25)
-mem load -filltype value -filldata 0110010001100011 -fillradix symbolic /processor/ftch/IM/ram(26)
-mem load -filltype value -filldata {11 } -fillradix symbolic /processor/ftch/IM/ram(27)
+mem load -filltype value -filldata 0101000000000001 -fillradix symbolic /processor/ftch/IM/ram(26)
+mem load -filltype value -filldata {10 } -fillradix symbolic /processor/ftch/IM/ram(27)
+mem load -filltype value -filldata 0110010001100011 -fillradix symbolic /processor/ftch/IM/ram(28)
+mem load -filltype value -filldata {11 } -fillradix symbolic /processor/ftch/IM/ram(29)
+mem load -filltype value -filldata 0110010001100011 -fillradix symbolic /processor/ftch/IM/ram(30)
+mem load -filltype value -filldata {11 } -fillradix symbolic /processor/ftch/IM/ram(31)
+mem load -filltype value -filldata 0110010001100011 -fillradix symbolic /processor/ftch/IM/ram(32)
+mem load -filltype value -filldata {11 } -fillradix symbolic /processor/ftch/IM/ram(33)
 
 add wave -position insertpoint  \
 sim:/processor/MEM_OUTPUT_OUT
@@ -100,6 +106,8 @@ sim:/processor/write_enable_signal_exe \
 sim:/processor/write_enable_signal_in \
 sim:/processor/write_enable_signal_out \
 sim:/processor/write_enable_signal_mem \
+sim:/processor/decision_src \
+sim:/processor/decision_dst \
 sim:/processor/dst_or_src_out
 force -freeze sim:/processor/clk 1 0, 0 {50 ps} -r 100
 force -freeze sim:/processor/RST 1 0
@@ -132,3 +140,5 @@ run
 run
 run
 run
+run
+

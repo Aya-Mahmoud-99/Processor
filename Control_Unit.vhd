@@ -18,12 +18,19 @@ end entity;
 Architecture myModel of control_unit is
 
 begin
+
 write_enable<='1'when opcode="111001" or opcode="110010" or opcode="110100" or opcode(5)='0'
 ELSE '0';
+
+
 R_type_signal<=not opcode(5);
+
+
 dst_offset_signal<=opcode(4);
-mem_write<='1' when opcode="110000" or opcode="110001" or opcode="110101"
+
+mem_Write<='1' when opcode="110000" or opcode="110001" or opcode="110101"
 ELSE '0';
+
 src_dst_signal<= not opcode(5) and opcode(4);
 
 end Architecture;

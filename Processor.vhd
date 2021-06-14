@@ -15,6 +15,25 @@ end entity;
 
 Architecture myModel of processor is
 
+
+
+component forwarding_unit is 
+
+port(
+wb_address1 : IN std_logic_vector(2 downto 0); -- destination of write back in memory stage
+wb_Signal1 : IN std_logic;
+wb_address2 : IN std_logic_vector(2 downto 0); -- destination of write back in write back stage
+wb_Signal2 : IN std_logic;
+src : IN std_logic_vector(2 downto 0);
+dst : IN std_logic_vector(2 downto 0);
+decision_src : out std_logic_vector(1 downto 0);
+decision_dst : out std_logic_vector(1 downto 0)
+);
+
+end component;
+
+
+
 component Memory is 
 port(
 Address : IN std_logic_vector(18 DOWNTO 0);
@@ -67,8 +86,12 @@ component Execute is
 port(
 Rst : IN std_logic;
 clk : IN std_logic;
+src_decision : in std_logic_vector(1 DOWNTO 0);
+dst_decision : in std_logic_vector(1 DOWNTO 0);
 ReadData1 : in std_logic_vector(31 DOWNTO 0);
 ReadData2 : in std_logic_vector(31 DOWNTO 0);
+forwarded_from_alu : in std_logic_vector(31 DOWNTO 0);
+forwarded_from_memo : in std_logic_vector(31 DOWNTO 0);
 opcode : in std_logic_vector(5 DOWNTO 0);
 F: OUT std_logic_vector(31 DOWNTO 0);
 dst_offset_signal : IN std_logic;
@@ -191,16 +214,25 @@ signal mem_Write_signal_out : std_logic;
 signal dst_src_signal : std_logic;
 signal dst_src_signal_out : std_logic;
 signal dst_or_src_out : std_logic_vector(2 DOWNTO 0);
+signal decision_src : std_logic_vector(1 DOWNTO 0);
+signal decision_dst : std_logic_vector(1 DOWNTO 0);
 
 begin
+
 ftch: Fetch PORT MAP(Iout_ftch,Iin,nxt_pc,curr_pc,clk,rst,pc_enable);
 bf_ftch_decode: Buffer_fd PORT MAP(Iout_ftch,Iin_Decode,nxt_pc,curr_pc,clk);
+
 decode : deocde_writeBack PORT MAP(Rst,clk,write_enable_signal,r_type_signal,dst_offset_signal,mem_write_signal,dst_src_signal,write_enable_signal_exe,Iin_Decode,Write_Data,ReadData1,ReadData2,WriteReg,opcode,dst,src,offset);
 df_dec : Buffer_de PORT MAP(write_enable_signal,write_enable_signal_out,r_type_signal,r_type_signal_out,dst_offset_signal,dst_offset_signal_out,mem_write_signal,mem_write_signal_out,dst_src_signal,dst_src_signal_out,ReadData1,ReadData2,opcode,opcode_out,dst,src,offset,ReadData1_out,ReadData2_out,dst_out,src_out,offset_out,clk);
-ex : Execute PORT MAP(Rst,clk,ReadData1_out,ReadData2_out,opcode_out,ALU_output,dst_offset_signal_out,offset_out);
+
+ex : Execute PORT MAP(Rst,clk,decision_src,decision_dst,ReadData1_out,ReadData2_out,ALU_OUTPUT_MEMORY,write_data,opcode_out,ALU_output,dst_offset_signal_out,offset_out);
 ex_mem : Buffer_em PORT MAP (write_enable_signal_out,write_enable_signal_mem,r_type_signal_out,r_type_signal_mem,mem_write_signal_out,write_in_memo_enable,ReadData2_out,ReadData2_out_mem,dst_or_src_out,write_back_reg_out,Alu_output,ALU_OUTPUT_MEMORY,clk); -- writeback register should come out of multiplexer choosing between src and destination let it destination only for nowend component;
+
 Mem : Memory PORT MAP (ALU_OUTPUT_MEMORY(18 downto 0),ReadData2_out_mem,read_data_from_memo,clk,RST,write_in_memo_enable );
 BF_EM : Buffer_mw PORT MAP (write_enable_signal_mem,write_enable_signal_exe,r_type_signal_mem,r_type_signal_wb,ALU_OUTPUT_MEMORY,Write_Data_alu,read_data_from_memo,MEM_OUTPUT_OUT,write_back_reg_out,WriteReg,clk);  --write back data should be choosen by a multipllexer choosing between output of memory and output of alu let it be output of alu only for now
+
+fru : forwarding_unit PORT MAP (write_back_reg_out,write_enable_signal_mem,WriteReg,write_enable_signal_exe,src_out,dst_out,decision_src,decision_dst);
+
 
 write_data<=Write_Data_alu when r_type_signal_wb='1'
 ELSE MEM_OUTPUT_OUT when r_type_signal_wb='0';
