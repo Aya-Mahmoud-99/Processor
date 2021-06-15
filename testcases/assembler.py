@@ -44,7 +44,7 @@ def writeLines(code):
 
                 
 
-with open("sample2.txt", "r") as a_file:
+with open("sample3.txt", "r") as a_file:
   with open('MachineCode.mem', 'w') as the_file:
        string2="// memory data file (do not edit the following line - required for mem load use)\n// instance=/processor/ftch/IM/ram\n// format=mti addressradix=h dataradix=b version=1.0 wordsperline=1"
        the_file.write(string2+"\n")

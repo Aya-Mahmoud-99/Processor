@@ -83,7 +83,24 @@ sim:/processor/flush \
 sim:/processor/Inport \
 sim:/processor/load_signal \
 sim:/processor/dst_or_src_out \
-sim:/processor/Outport
+sim:/processor/Outport \
+
+
+add wave -position insertpoint  \
+sim:/processor/decode/rgFile/regA \
+sim:/processor/decode/rgFile/regB \
+sim:/processor/decode/rgFile/regC \
+sim:/processor/decode/rgFile/regD \
+sim:/processor/decode/rgFile/regE \
+sim:/processor/decode/rgFile/regF \
+sim:/processor/decode/rgFile/regG \
+sim:/processor/decode/rgFile/regH \
+
+add wave -position insertpoint  \
+sim:/processor/sp_enable_out2
+
+
+
 force -freeze sim:/processor/clk 1 0, 0 {50 ps} -r 100
 force -freeze sim:/processor/RST 1 0
 
@@ -100,18 +117,27 @@ run
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /processor/ftch/IM
 force -freeze sim:/processor/RST 0 0
+
+
+
+
+force -freeze sim:/processor/Inport 32'h19 0
+
+run
+
+force -freeze sim:/processor/Inport 32'hFFFF 0
+run
+
+force -freeze sim:/processor/Inport 32'hF320 0
+run
+
+run
+run
+run
 run
 run
 
-force -freeze sim:/processor/Inport 32'hFFFFFFF 0
-run
-
-force -freeze sim:/processor/Inport 32'hFFFFF320 0
-run
-run
-run
-run
-run
+force -freeze sim:/processor/Inport 32'h10 0
 run
 run
 run
