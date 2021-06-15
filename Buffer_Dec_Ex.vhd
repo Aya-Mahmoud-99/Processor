@@ -16,6 +16,10 @@ dst_src_signal : IN std_logic;
 dst_src_signal_out : out std_logic;
 load_signal_in : in std_logic;
 load_signal_out : out std_logic;
+out_port_signal : in std_logic;
+out_port_signal_out : out std_logic;
+store_signal : in std_logic;
+store_signal_out : out std_logic;
 ReadData1_in 	 :	in std_logic_vector(31 downto 0);
 ReadData2_in	 :	in std_logic_vector(31 downto 0);
 opcode_in : in std_logic_vector(5 DOWNTO 0);
@@ -51,6 +55,8 @@ BEGIN
 		dst_src_signal_out<=dst_src_signal;
 		load_signal_out<=load_signal_in;
 		Inport_out<=Inport;
+		out_port_signal_out<=out_port_signal;
+		store_signal_out<=store_signal;
 
 	END IF;
 END PROCESS;

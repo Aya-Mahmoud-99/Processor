@@ -49,7 +49,7 @@ mem load -filltype value -filldata {0 } -fillradix symbolic /processor/ftch/IM/r
 mem load -filltype value -filldata 0000100010100001 -fillradix symbolic /processor/ftch/IM/ram(16)
 mem load -filltype value -filldata {0 } -fillradix symbolic /processor/ftch/IM/ram(17)
 mem load -filltype value -filldata 1101010000100111 -fillradix symbolic /processor/ftch/IM/ram(18)
-mem load -filltype value -filldata {10 } -fillradix symbolic /processor/ftch/IM/ram(19)
+mem load -filltype value -filldata {11 } -fillradix symbolic /processor/ftch/IM/ram(19)
 mem load -filltype value -filldata 0101000000100000 -fillradix symbolic /processor/ftch/IM/ram(20)
 mem load -filltype value -filldata {10 } -fillradix symbolic /processor/ftch/IM/ram(21)
 mem load -filltype value -filldata 0001100010100100 -fillradix symbolic /processor/ftch/IM/ram(22)
@@ -60,7 +60,7 @@ mem load -filltype value -filldata 0110000010100000 -fillradix symbolic /process
 mem load -filltype value -filldata {10 } -fillradix symbolic /processor/ftch/IM/ram(27)
 mem load -filltype value -filldata 0101000000000001 -fillradix symbolic /processor/ftch/IM/ram(28)
 mem load -filltype value -filldata {10 } -fillradix symbolic /processor/ftch/IM/ram(29)
-mem load -filltype value -filldata 1110100001100001 -fillradix symbolic /processor/ftch/IM/ram(30)
+mem load -filltype value -filldata 0010100001100001 -fillradix symbolic /processor/ftch/IM/ram(30)
 mem load -filltype value -filldata {10 } -fillradix symbolic /processor/ftch/IM/ram(31)
 mem load -filltype value -filldata 0110010001100011 -fillradix symbolic /processor/ftch/IM/ram(32)
 mem load -filltype value -filldata {11 } -fillradix symbolic /processor/ftch/IM/ram(33)
@@ -68,6 +68,8 @@ mem load -filltype value -filldata 0110010001100011 -fillradix symbolic /process
 mem load -filltype value -filldata {11 } -fillradix symbolic /processor/ftch/IM/ram(35)
 mem load -filltype value -filldata 0110010001100011 -fillradix symbolic /processor/ftch/IM/ram(36)
 mem load -filltype value -filldata {11 } -fillradix symbolic /processor/ftch/IM/ram(37)
+mem load -filltype value -filldata 1001100001100000 -fillradix symbolic /processor/ftch/IM/ram(38)
+mem load -filltype value -filldata {11 } -fillradix symbolic /processor/ftch/IM/ram(39)
 
 add wave -position insertpoint  \
 sim:/processor/MEM_OUTPUT_OUT
@@ -113,8 +115,10 @@ sim:/processor/write_enable_signal_mem \
 sim:/processor/decision_src \
 sim:/processor/decision_dst \
 sim:/processor/flush \
+sim:/processor/outport \
 sim:/processor/Inport \
 sim:/processor/load_signal \
+sim:/processor/out_port_signal_out \
 sim:/processor/dst_or_src_out
 force -freeze sim:/processor/clk 1 0, 0 {50 ps} -r 100
 force -freeze sim:/processor/RST 1 0
