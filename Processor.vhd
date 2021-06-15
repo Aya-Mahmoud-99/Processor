@@ -1,4 +1,3 @@
-
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 use IEEE.std_logic_unsigned.all;
@@ -116,7 +115,8 @@ dst_offset_signal : IN std_logic;
 offset : in std_logic_vector(15 DOWNTO 0);
 Inport_out : in std_logic_vector(31 DOWNTO 0);
 out_port_signal : IN std_logic;
-store_signal : IN std_logic
+store_signal : IN std_logic;
+forwarded_data : out std_logic_vector(31 DOWNTO 0)
 );
 
 end component;
@@ -269,6 +269,7 @@ signal store_signal_out : std_logic;
 signal sp_enable_in : std_logic;
 signal sp_enable_out : std_logic;
 signal sp_enable_out2 : std_logic;
+signal forwarded_data : std_logic_vector(31 DOWNTO 0);
 begin
 
 ftch: Fetch PORT MAP(Iout_ftch,Iin,nxt_pc,curr_pc,memory_zero,clk,rst,pc_enable);
@@ -277,8 +278,8 @@ bf_ftch_decode: Buffer_fd PORT MAP(Iout_ftch,Iin_Decode,nxt_pc,curr_pc,InPort,In
 decode : deocde_writeBack PORT MAP(Rst,clk,write_enable_signal,r_type_signal,dst_offset_signal,mem_write_signal,dst_src_signal,load_signal,out_port_signal,store_signal,sp_enable_in,flush,write_enable_signal_exe,Iin_Decode,Write_Data,ReadData1,ReadData2,WriteReg,opcode,dst,src,offset);
 df_dec : Buffer_de PORT MAP(write_enable_signal,write_enable_signal_out,r_type_signal,r_type_signal_out,dst_offset_signal,dst_offset_signal_out,mem_write_signal,mem_write_signal_out,dst_src_signal,dst_src_signal_out,load_signal,load_signal_out,store_signal,store_signal_out,out_port_signal,out_port_signal_out,sp_enable_in,sp_enable_out,ReadData1,ReadData2,opcode,opcode_out,dst,src,offset,ReadData1_out,ReadData2_out,dst_out,src_out,offset_out,Inporttemp,InPort_out,clk);
 
-ex : Execute PORT MAP(Rst,clk,decision_src,decision_dst,ReadData1_out,ReadData2_out,ALU_OUTPUT_MEMORY,write_data,opcode_out,ALU_output,dst_offset_signal_out,offset_out,Inport_out,out_port_signal_out,store_signal_out);
-ex_mem : Buffer_em PORT MAP (write_enable_signal_out,write_enable_signal_mem,r_type_signal_out,r_type_signal_mem,mem_write_signal_out,write_in_memo_enable,sp_enable_out,sp_enable_out2,ReadData2_out,ReadData2_out_mem,dst_or_src_out,write_back_reg_out,Alu_output,ALU_OUTPUT_MEMORY,clk); -- writeback register should come out of multiplexer choosing between src and destination let it destination only for nowend component;
+ex : Execute PORT MAP(Rst,clk,decision_src,decision_dst,ReadData1_out,ReadData2_out,ALU_OUTPUT_MEMORY,write_data,opcode_out,ALU_output,dst_offset_signal_out,offset_out,Inport_out,out_port_signal_out,store_signal_out,forwarded_data);
+ex_mem : Buffer_em PORT MAP (write_enable_signal_out,write_enable_signal_mem,r_type_signal_out,r_type_signal_mem,mem_write_signal_out,write_in_memo_enable,sp_enable_out,sp_enable_out2,forwarded_data,ReadData2_out_mem,dst_or_src_out,write_back_reg_out,Alu_output,ALU_OUTPUT_MEMORY,clk); -- writeback register should come out of multiplexer choosing between src and destination let it destination only for nowend component;
 
 Mem : Memory PORT MAP (ALU_OUTPUT_MEMORY(18 downto 0),ReadData2_out_mem,read_data_from_memo,clk,RST,write_in_memo_enable ,memory_zero,sp_enable_out2);
 BF_EM : Buffer_mw PORT MAP (write_enable_signal_mem,write_enable_signal_exe,r_type_signal_mem,r_type_signal_wb,ALU_OUTPUT_MEMORY,Write_Data_alu,read_data_from_memo,MEM_OUTPUT_OUT,write_back_reg_out,WriteReg,clk);  --write back data should be choosen by a multipllexer choosing between output of memory and output of alu let it be output of alu only for now

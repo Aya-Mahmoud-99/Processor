@@ -18,7 +18,8 @@ dst_offset_signal : IN std_logic;
 offset : in std_logic_vector(15 DOWNTO 0);
 Inport_out : in std_logic_vector(31 DOWNTO 0);
 out_port_signal : IN std_logic;
-store_signal: IN std_logic
+store_signal: IN std_logic;
+forwarded_data : out std_logic_vector(31 DOWNTO 0)
 );
 
 end entity;
@@ -50,6 +51,7 @@ ELSE forwarded_from_memo when src_decision="10" ;
 temp_dst<=ReadData22 when dst_decision="00"
 ELSE forwarded_from_alu when dst_decision="01"
 ELSE forwarded_from_memo when dst_decision="10" ;
+forwarded_data<=temp_dst;
 
 to_be_added<= temp_dst when dst_offset_signal='0'
 ELSE "0000000000000000"&offset when dst_offset_signal='1';

@@ -56,8 +56,8 @@ begin
 added <= x"FFFFFFFE" WHEN write_enable = '1'
 ELSE x"00000002";
 selected_Address <= Address WHEN SP_enable = '0'
-ELSE sp_new (18 downto 0);
-IM :ram GENERIC MAP (32) PORT MAP(Clk,write_enable,Address,write_data,read_data,memory_zero,'0');
+ELSE out_data (18 downto 0);
+IM :ram GENERIC MAP (32) PORT MAP(Clk,write_enable,selected_Address,write_data,read_data,memory_zero,'0');
 u0: my_nadder GENERIC MAP (32) PORT MAP(out_data,added,'0',sp_new,cout);
 SP: my_nDFF_Stack GENERIC MAP (32) PORT MAP(Clk,Rst,SP_enable,sp_new,out_data);
 end Architecture;
