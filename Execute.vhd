@@ -15,7 +15,8 @@ forwarded_from_memo : in std_logic_vector(31 DOWNTO 0);
 opcode : in std_logic_vector(5 DOWNTO 0);
 F: OUT std_logic_vector(31 DOWNTO 0);
 dst_offset_signal : IN std_logic;
-offset : in std_logic_vector(15 DOWNTO 0)
+offset : in std_logic_vector(15 DOWNTO 0);
+Inport_out : in std_logic_vector(31 DOWNTO 0)
 );
 
 end entity;
@@ -28,7 +29,8 @@ PORT(
 	A: IN std_logic_vector(n-1 DOWNTO 0);
 	B: IN std_logic_vector(n-1 DOWNTO 0);
 	S: IN std_logic_vector(3 DOWNTO 0);
-	F: OUT std_logic_vector(n-1 DOWNTO 0));
+	F: OUT std_logic_vector(n-1 DOWNTO 0);
+	Inport_out: in std_logic_vector(n-1 DOWNTO 0));
 END COMPONENT;
 
 signal to_be_added : std_logic_vector(31 DOWNTO 0);
@@ -46,5 +48,5 @@ ELSE forwarded_from_memo when dst_decision="10" ;
 
 to_be_added<= temp_dst when dst_offset_signal='0'
 ELSE "0000000000000000"&offset when dst_offset_signal='1';
-AL: ALU GENERIC MAP (32) PORT MAP(temp_src,to_be_added,opcode(3 downto 0),F);
+AL: ALU GENERIC MAP (32) PORT MAP(temp_src,to_be_added,opcode(3 downto 0),F,Inport_out);
 end Architecture;

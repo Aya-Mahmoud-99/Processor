@@ -8,7 +8,9 @@ PORT(
 	A: IN std_logic_vector(n-1 DOWNTO 0);
 	B: IN std_logic_vector(n-1 DOWNTO 0);
 	S: IN std_logic_vector(3 DOWNTO 0);
-	F: OUT std_logic_vector(n-1 DOWNTO 0));
+	F: OUT std_logic_vector(n-1 DOWNTO 0);
+	Inport_out: in std_logic_vector(n-1 DOWNTO 0)
+);
 END ENTITY;
 
 ARCHITECTURE struct1 OF ALU IS
@@ -37,12 +39,15 @@ ELSE not B WHEN S="0000"
 ELSE A WHEN S="0011"
 ELSE std_logic_vector(shift_left(unsigned(A), to_integer(unsigned(B)))) WHEN S="1000" 
 ELSE std_logic_vector(shift_right(unsigned(A), to_integer(unsigned(B)))) WHEN S="1001"
-ELSE B WHEN S="1011";
+ELSE B WHEN S="1011"
+ELSE Inport_out WHEN S="1010";
 
 sigA<=A WHEN S="0100"
 ELSE A WHEN S="0101"
 ELSE "00000000000000000000000000000001" WHEN s="0001"
 ELSE "11111111111111111111111111111111" WHEN s="0010";
+
+
 
 sigB<=not B WHEN S="0101"
 ELSE B ;

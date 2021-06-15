@@ -8,7 +8,9 @@ entity processor is
 port(
 clk : IN std_logic;
 RST: IN std_logic;
-Iin : IN std_logic_vector(31 DOWNTO 0));
+Iin : IN std_logic_vector(31 DOWNTO 0);
+Inport : IN std_logic_vector(31 DOWNTO 0)
+);
 
 end entity;
 
@@ -107,7 +109,8 @@ forwarded_from_memo : in std_logic_vector(31 DOWNTO 0);
 opcode : in std_logic_vector(5 DOWNTO 0);
 F: OUT std_logic_vector(31 DOWNTO 0);
 dst_offset_signal : IN std_logic;
-offset : in std_logic_vector(15 DOWNTO 0)
+offset : in std_logic_vector(15 DOWNTO 0);
+Inport_out : in std_logic_vector(31 DOWNTO 0)
 );
 
 end component;
@@ -139,6 +142,8 @@ ReadData2_out	 :	out std_logic_vector(31 downto 0);
 dst_out 	 :	out std_logic_vector(2 downto 0);
 src_out 	 :	out std_logic_vector(2 downto 0);
 offset_out 	 :	out std_logic_vector(15 downto 0);
+Inport : in std_logic_vector(31 downto 0);
+Inport_out : out std_logic_vector(31 downto 0);
 clk : IN std_logic                 
 );
 end component;
@@ -186,6 +191,8 @@ port (Iin 	 :	in std_logic_vector(31 downto 0);
 Iout 	 :	out std_logic_vector(31 downto 0);
 Pcin 	 :	in std_logic_vector(18 downto 0);
 Pcout 	 :	out std_logic_vector(18 downto 0);
+Inport : in std_logic_vector(31 downto 0);
+Inport_out : out std_logic_vector(31 downto 0);
 clk : IN std_logic             
 );
 end COMPONENT;
@@ -210,6 +217,8 @@ signal ReadData1_out : std_logic_vector(31 DOWNTO 0);
 signal ReadData2_out : std_logic_vector(31 DOWNTO 0);
 signal ReadData2_out_mem : std_logic_vector(31 DOWNTO 0);
 signal read_data_from_memo : std_logic_vector(31 DOWNTO 0);
+signal Inporttemp : std_logic_vector(31 DOWNTO 0);
+signal Inport_out : std_logic_vector(31 DOWNTO 0);
 signal MEM_OUTPUT_OUT : std_logic_vector(31 DOWNTO 0);
 signal dst_out : std_logic_vector(2 DOWNTO 0);
 signal write_back_reg_out : std_logic_vector(2 DOWNTO 0);
@@ -242,12 +251,12 @@ signal load_signal_out : std_logic;
 begin
 
 ftch: Fetch PORT MAP(Iout_ftch,Iin,nxt_pc,curr_pc,memory_zero,clk,rst,pc_enable);
-bf_ftch_decode: Buffer_fd PORT MAP(Iout_ftch,Iin_Decode,nxt_pc,curr_pc,clk);
+bf_ftch_decode: Buffer_fd PORT MAP(Iout_ftch,Iin_Decode,nxt_pc,curr_pc,InPort,Inporttemp,clk);
 
 decode : deocde_writeBack PORT MAP(Rst,clk,write_enable_signal,r_type_signal,dst_offset_signal,mem_write_signal,dst_src_signal,load_signal,flush,write_enable_signal_exe,Iin_Decode,Write_Data,ReadData1,ReadData2,WriteReg,opcode,dst,src,offset);
-df_dec : Buffer_de PORT MAP(write_enable_signal,write_enable_signal_out,r_type_signal,r_type_signal_out,dst_offset_signal,dst_offset_signal_out,mem_write_signal,mem_write_signal_out,dst_src_signal,dst_src_signal_out,load_signal,load_signal_out,ReadData1,ReadData2,opcode,opcode_out,dst,src,offset,ReadData1_out,ReadData2_out,dst_out,src_out,offset_out,clk);
+df_dec : Buffer_de PORT MAP(write_enable_signal,write_enable_signal_out,r_type_signal,r_type_signal_out,dst_offset_signal,dst_offset_signal_out,mem_write_signal,mem_write_signal_out,dst_src_signal,dst_src_signal_out,load_signal,load_signal_out,ReadData1,ReadData2,opcode,opcode_out,dst,src,offset,ReadData1_out,ReadData2_out,dst_out,src_out,offset_out,Inporttemp,InPort_out,clk);
 
-ex : Execute PORT MAP(Rst,clk,decision_src,decision_dst,ReadData1_out,ReadData2_out,ALU_OUTPUT_MEMORY,write_data,opcode_out,ALU_output,dst_offset_signal_out,offset_out);
+ex : Execute PORT MAP(Rst,clk,decision_src,decision_dst,ReadData1_out,ReadData2_out,ALU_OUTPUT_MEMORY,write_data,opcode_out,ALU_output,dst_offset_signal_out,offset_out,Inport_out);
 ex_mem : Buffer_em PORT MAP (write_enable_signal_out,write_enable_signal_mem,r_type_signal_out,r_type_signal_mem,mem_write_signal_out,write_in_memo_enable,ReadData2_out,ReadData2_out_mem,dst_or_src_out,write_back_reg_out,Alu_output,ALU_OUTPUT_MEMORY,clk); -- writeback register should come out of multiplexer choosing between src and destination let it destination only for nowend component;
 
 Mem : Memory PORT MAP (ALU_OUTPUT_MEMORY(18 downto 0),ReadData2_out_mem,read_data_from_memo,clk,RST,write_in_memo_enable ,memory_zero);

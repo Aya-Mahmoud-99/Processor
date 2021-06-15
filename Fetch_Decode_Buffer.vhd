@@ -6,8 +6,10 @@ entity Buffer_fd is
 	port (Iin 	 :	in std_logic_vector(31 downto 0);
 Iout 	 :	out std_logic_vector(31 downto 0);
 Pcin 	 :	in std_logic_vector(18 downto 0);
-clk : IN std_logic;
-Pcout 	 :	out std_logic_vector(18 downto 0)
+Pcout 	 :	out std_logic_vector(18 downto 0);
+Inport : in std_logic_vector(31 downto 0);
+Inport_out : out std_logic_vector(31 downto 0);
+clk : IN std_logic
                   
 );
 end Buffer_fd;
@@ -18,6 +20,7 @@ BEGIN
 	IF falling_edge(clk) THEN
 		Iout<=Iin;
 		Pcout<=Pcin;
+		Inport_out<=Inport;
 
 	END IF;
 END PROCESS;

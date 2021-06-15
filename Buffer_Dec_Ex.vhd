@@ -28,6 +28,8 @@ ReadData2_out	 :	out std_logic_vector(31 downto 0);
 dst_out 	 :	out std_logic_vector(2 downto 0);
 src_out 	 :	out std_logic_vector(2 downto 0);
 offset_out 	 :	out std_logic_vector(15 downto 0);
+Inport : in std_logic_vector(31 downto 0);
+Inport_out : out std_logic_vector(31 downto 0);
 clk : IN std_logic                 
 );
 end Buffer_de;
@@ -48,6 +50,7 @@ BEGIN
 		mem_write_signal_out<=mem_write_signal;
 		dst_src_signal_out<=dst_src_signal;
 		load_signal_out<=load_signal_in;
+		Inport_out<=Inport;
 
 	END IF;
 END PROCESS;

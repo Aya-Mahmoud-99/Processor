@@ -22,7 +22,7 @@ Architecture myModel of control_unit is
 begin
 
 write_enable<='0' when flush = '1'
-ELSE '1' when opcode="111001" or opcode="110010" or opcode="110100" or opcode(5)='0'
+ELSE '1' when opcode="111010" or opcode="110010" or opcode="110100" or opcode(5)='0'
 ELSE '0';
 
 R_type_signal<=not opcode(5);
