@@ -10,7 +10,8 @@ read_data : OUT std_logic_vector(31 DOWNTO 0);
 clk : IN std_logic;
 RST: IN std_logic;
 write_enable : IN std_logic;
-memory_zero : OUT std_logic_vector(18 DOWNTO 0)
+memory_zero : OUT std_logic_vector(18 DOWNTO 0);
+SP_enable : IN std_logic
 );
 
 end entity;
@@ -29,6 +30,34 @@ rst : IN std_logic
 );
 END COMPONENT ram;
 
+COMPONENT my_nDFF_Stack IS
+GENERIC ( n : integer := 16);
+PORT( Clk,Rst,enable : IN std_logic;
+d : IN std_logic_vector(n-1 DOWNTO 0);
+q : OUT std_logic_vector(n-1 DOWNTO 0));
+END COMPONENT;
+
+
+COMPONENT my_nadder IS 
+GENERIC (n: integer := 8);
+PORT(
+	A,B: IN std_logic_vector(n-1 DOWNTO 0);
+	Cin: IN std_logic;
+	Sum: OUT std_logic_vector(n-1 DOWNTO 0);
+	Cout: OUT std_logic);
+END COMPONENT;
+
+signal added : std_logic_vector(31 DOWNTO 0);
+signal out_data : std_logic_vector(31 DOWNTO 0);
+signal sp_new : std_logic_vector(31 DOWNTO 0);
+signal selected_Address : std_logic_vector(18 DOWNTO 0);
+signal cout : std_logic;
 begin
+added <= x"FFFFFFFE" WHEN write_enable = '1'
+ELSE x"00000002";
+selected_Address <= Address WHEN SP_enable = '0'
+ELSE sp_new (18 downto 0);
 IM :ram GENERIC MAP (32) PORT MAP(Clk,write_enable,Address,write_data,read_data,memory_zero,'0');
+u0: my_nadder GENERIC MAP (32) PORT MAP(out_data,added,'0',sp_new,cout);
+SP: my_nDFF_Stack GENERIC MAP (32) PORT MAP(Clk,Rst,SP_enable,sp_new,out_data);
 end Architecture;

@@ -10,6 +10,8 @@ r_type_signal_in : IN std_logic;
 r_type_signal_out : OUT std_logic;
 mem_write_signal : IN std_logic;
 mem_write_signal_out : OUT std_logic;
+sp_signal : in std_logic;
+sp_signal_out : out std_logic;
 ReadData2_in	 :	in std_logic_vector(31 downto 0);
 ReadData2_out	 :	out std_logic_vector(31 downto 0);
 write_back_reg_in 	 :	in std_logic_vector(2 downto 0);
@@ -30,6 +32,7 @@ BEGIN
 		write_enable_signal_out<=write_enable_signal_in;
 		r_type_signal_out<=r_type_signal_in;
 		mem_write_signal_out<=mem_write_signal;
+		sp_signal_out<=sp_signal;
 	END IF;
 END PROCESS;
 END a_buffer;

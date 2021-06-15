@@ -14,6 +14,7 @@ src_dst_signal : out std_logic;
 load_signal : out std_logic;
 out_port_signal : out std_logic;
 store_signal : out std_logic;
+SP_enable : OUT std_logic;
 flush : in std_logic
 );
 
@@ -32,6 +33,9 @@ R_type_signal<=not opcode(5);
 load_signal<= '1' WHEN opcode = "110100" else '0';
 
 dst_offset_signal<=opcode(4);
+
+SP_enable <= '1' WHEN opcode (5 downto 2) = "1100"
+ELSE '0';
 
 mem_Write<='0' when FLUSH = '1'
 ELSE '1' when opcode="110000" or opcode="110001" or opcode="110101"

@@ -20,6 +20,8 @@ out_port_signal : in std_logic;
 out_port_signal_out : out std_logic;
 store_signal : in std_logic;
 store_signal_out : out std_logic;
+sp_signal : in std_logic;
+sp_signal_out : out std_logic;
 ReadData1_in 	 :	in std_logic_vector(31 downto 0);
 ReadData2_in	 :	in std_logic_vector(31 downto 0);
 opcode_in : in std_logic_vector(5 DOWNTO 0);
@@ -57,7 +59,7 @@ BEGIN
 		Inport_out<=Inport;
 		out_port_signal_out<=out_port_signal;
 		store_signal_out<=store_signal;
-
+		sp_signal_out<=sp_signal;
 	END IF;
 END PROCESS;
 END a_buffer;
