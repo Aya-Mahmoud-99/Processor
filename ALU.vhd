@@ -23,6 +23,7 @@ PORT(
 END COMPONENT;
 SIGNAL sigadd: std_logic_vector(n-1 DOWNTO 0);
 SIGNAL sigA: std_logic_vector(n-1 DOWNTO 0);
+SIGNAL sigB: std_logic_vector(n-1 DOWNTO 0);
 SIGNAL coutA: std_logic;
 SIGNAL cin: std_logic;
 
@@ -39,14 +40,15 @@ ELSE std_logic_vector(shift_right(unsigned(A), to_integer(unsigned(B)))) WHEN S=
 ELSE B WHEN S="1011";
 
 sigA<=A WHEN S="0100"
-ELSE not A WHEN S="0101"
+ELSE A WHEN S="0101"
 ELSE "00000000000000000000000000000001" WHEN s="0001"
 ELSE "11111111111111111111111111111111" WHEN s="0010";
 
+sigB<=not B WHEN S="0101"
+ELSE B ;
 
 cin<='1' when S="0101"
 ELSE '0';
-u0: my_nadder GENERIC MAP (32) PORT MAP(sigA,B,cin,sigadd,coutA);
+u0: my_nadder GENERIC MAP (32) PORT MAP(sigA,sigB,cin,sigadd,coutA);
 
 END ARCHITECTURE;
-
